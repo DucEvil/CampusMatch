@@ -1,0 +1,496 @@
+{
+  "report_date": "2026-11-05",
+  "run_at_bangkok": "2026-11-05 23:07:01",
+  "node": "v24.22.1",
+  "platform": "win32",
+  "release": "10.0.26200",
+  "architecture": "x64",
+  "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+  "model": "tfidf-hybrid-2.0",
+  "total": 69,
+  "pass": 69,
+  "fail": 0,
+  "suites": [
+    {
+      "id": "core",
+      "name": "Lõi xử lý CV ghép việc BI và dữ liệu",
+      "file": "tests/core.test.mjs",
+      "args": [
+        "--test",
+        "--test-reporter=tap",
+        "tests/core.test.mjs"
+      ],
+      "exit_code": 0,
+      "cases": [
+        {
+          "number": 1,
+          "name": "CV rỗng bị từ chối",
+          "status": "pass"
+        },
+        {
+          "number": 2,
+          "name": "CV quá dài bị từ chối",
+          "status": "pass"
+        },
+        {
+          "number": 3,
+          "name": "Không gộp JavaScript vào Java",
+          "status": "pass"
+        },
+        {
+          "number": 4,
+          "name": "Java vẫn được nhận diện độc lập",
+          "status": "pass"
+        },
+        {
+          "number": 5,
+          "name": "Alias JS và ReactJS được chuẩn hóa",
+          "status": "pass"
+        },
+        {
+          "number": 6,
+          "name": "Không nhận Python trong câu chưa biết Python",
+          "status": "pass"
+        },
+        {
+          "number": 7,
+          "name": "Vẫn nhận kỹ năng khi có bằng chứng dương khác",
+          "status": "pass"
+        },
+        {
+          "number": 8,
+          "name": "Trả bằng chứng và yêu cầu xác nhận",
+          "status": "pass"
+        },
+        {
+          "number": 9,
+          "name": "TF-IDF chỉ fit 12 JD train",
+          "status": "pass"
+        },
+        {
+          "number": 10,
+          "name": "Từ ngoài từ vựng không thêm vào mô hình",
+          "status": "pass"
+        },
+        {
+          "number": 11,
+          "name": "Cosine vector rỗng bằng 0",
+          "status": "pass"
+        },
+        {
+          "number": 12,
+          "name": "Cosine tự so sánh bằng 1",
+          "status": "pass"
+        },
+        {
+          "number": 13,
+          "name": "Điểm luôn nằm trong 0 đến 100",
+          "status": "pass"
+        },
+        {
+          "number": 14,
+          "name": "Chưa xác nhận không có tổng điểm",
+          "status": "pass"
+        },
+        {
+          "number": 15,
+          "name": "Thiếu lịch không tự giả định là khớp",
+          "status": "pass"
+        },
+        {
+          "number": 16,
+          "name": "Trùng lịch bị loại dù kỹ năng khớp",
+          "status": "pass"
+        },
+        {
+          "number": 17,
+          "name": "Tin đóng bị loại",
+          "status": "pass"
+        },
+        {
+          "number": 18,
+          "name": "Tin hết hạn bị loại",
+          "status": "pass"
+        },
+        {
+          "number": 19,
+          "name": "Remote không trừ điểm vì khác thành phố",
+          "status": "pass"
+        },
+        {
+          "number": 20,
+          "name": "Tổng điểm khớp tổng các thành phần",
+          "status": "pass"
+        },
+        {
+          "number": 21,
+          "name": "Giới tính và tuổi không ảnh hưởng điểm",
+          "status": "pass"
+        },
+        {
+          "number": 22,
+          "name": "Hạng cao nhất cùng nhóm nghề của hồ sơ",
+          "status": "pass"
+        },
+        {
+          "number": 23,
+          "name": "Funnel đơn từng đi qua và giảm dần",
+          "status": "pass"
+        },
+        {
+          "number": 24,
+          "name": "BI không cộng trùng ứng viên",
+          "status": "pass"
+        },
+        {
+          "number": 25,
+          "name": "Cohort rỗng trả tỷ lệ null",
+          "status": "pass"
+        },
+        {
+          "number": 26,
+          "name": "Không trộn lương USD hoặc theo giờ",
+          "status": "pass"
+        },
+        {
+          "number": 27,
+          "name": "Lọc BI theo thành phố và cohort ngày gửi",
+          "status": "pass"
+        },
+        {
+          "number": 28,
+          "name": "Không cho chuyển trực tiếp từ gửi đơn sang tuyển",
+          "status": "pass"
+        },
+        {
+          "number": 29,
+          "name": "Khóa ngoại từ chối đơn không có ứng viên",
+          "status": "pass"
+        },
+        {
+          "number": 30,
+          "name": "UNIQUE ngăn ứng tuyển trùng",
+          "status": "pass"
+        },
+        {
+          "number": 31,
+          "name": "Sửa CV không làm đổi snapshot đơn cũ",
+          "status": "pass"
+        },
+        {
+          "number": 32,
+          "name": "Giao dịch lỗi hoàn tác cả đơn và sự kiện",
+          "status": "pass"
+        }
+      ],
+      "total": 32,
+      "pass": 32,
+      "fail": 0
+    },
+    {
+      "id": "api",
+      "name": "API nghiệp vụ với SQLite trong bộ nhớ",
+      "file": "tests/api.test.mjs",
+      "args": [
+        "--loader",
+        "./tests/ts-loader.mjs",
+        "--test",
+        "--test-reporter=tap",
+        "tests/api.test.mjs"
+      ],
+      "exit_code": 0,
+      "cases": [
+        {
+          "number": 1,
+          "name": "Khởi tạo dữ liệu có tính lặp lại an toàn",
+          "status": "pass"
+        },
+        {
+          "number": 2,
+          "name": "API đọc CV trả kỹ năng và bằng chứng",
+          "status": "pass"
+        },
+        {
+          "number": 3,
+          "name": "API từ chối JSON null",
+          "status": "pass"
+        },
+        {
+          "number": 4,
+          "name": "API từ chối JSON sai cú pháp",
+          "status": "pass"
+        },
+        {
+          "number": 5,
+          "name": "API từ chối CV rỗng",
+          "status": "pass"
+        },
+        {
+          "number": 6,
+          "name": "API từ chối Origin khác",
+          "status": "pass"
+        },
+        {
+          "number": 7,
+          "name": "API từ chối hồ sơ chưa xác nhận",
+          "status": "pass"
+        },
+        {
+          "number": 8,
+          "name": "Lưu hồ sơ xác nhận vào CSDL",
+          "status": "pass"
+        },
+        {
+          "number": 9,
+          "name": "API match có phiên bản và thành phần điểm",
+          "status": "pass"
+        },
+        {
+          "number": 10,
+          "name": "Không tìm thấy hồ sơ trả 404",
+          "status": "pass"
+        },
+        {
+          "number": 11,
+          "name": "Đăng tin với lương sai bị từ chối",
+          "status": "pass"
+        },
+        {
+          "number": 12,
+          "name": "Đăng tin hợp lệ tạo tin và snapshot lương",
+          "status": "pass"
+        },
+        {
+          "number": 13,
+          "name": "Gửi đơn tạo dữ liệu bền vững",
+          "status": "pass"
+        },
+        {
+          "number": 14,
+          "name": "Ứng tuyển trùng trả 409",
+          "status": "pass"
+        },
+        {
+          "number": 15,
+          "name": "Chuyển trạng thái sai bị từ chối",
+          "status": "pass"
+        },
+        {
+          "number": 16,
+          "name": "Chuyển trạng thái hợp lệ lưu lịch sử",
+          "status": "pass"
+        },
+        {
+          "number": 17,
+          "name": "Sửa CV không đổi snapshot đơn gửi trước",
+          "status": "pass"
+        },
+        {
+          "number": 18,
+          "name": "BI cohort rỗng không chia cho 0",
+          "status": "pass"
+        }
+      ],
+      "total": 18,
+      "pass": 18,
+      "fail": 0
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini và ảnh CV với phản hồi mô phỏng",
+      "file": "tests/cv-analysis.test.mjs",
+      "args": [
+        "--loader",
+        "./tests/ts-loader.mjs",
+        "--test",
+        "--test-reporter=tap",
+        "tests/cv-analysis.test.mjs"
+      ],
+      "exit_code": 0,
+      "cases": [
+        {
+          "number": 1,
+          "name": "Chưa có key: báo cấu hình, không gửi CV ra ngoài",
+          "status": "pass"
+        },
+        {
+          "number": 2,
+          "name": "CV không hợp lệ bị từ chối trước khi gọi Gemini",
+          "status": "pass"
+        },
+        {
+          "number": 3,
+          "name": "Gọi Gemini từ backend với header key và schema; giữ bước xác nhận",
+          "status": "pass"
+        },
+        {
+          "number": 4,
+          "name": "Loại kỹ năng có bằng chứng bịa, loại trùng và không đưa kỹ năng mới vào điểm ghép việc",
+          "status": "pass"
+        },
+        {
+          "number": 5,
+          "name": "Không chấp nhận cấu trúc sai, kỹ năng ngoài danh mục hoặc kết quả bị cắt",
+          "status": "pass"
+        },
+        {
+          "number": 6,
+          "name": "Lỗi quota, quyền, model và dịch vụ có thông báo riêng; không lộ lỗi gốc",
+          "status": "pass"
+        },
+        {
+          "number": 7,
+          "name": "Lỗi mạng và hết thời gian không lộ thông tin request",
+          "status": "pass"
+        },
+        {
+          "number": 8,
+          "name": "Model tùy chọn bị giới hạn ở tên model, không cho thay host hoặc đường dẫn",
+          "status": "pass"
+        },
+        {
+          "number": 9,
+          "name": "API config chỉ trả trạng thái, API chọn Gemini và từ điển tách biệt",
+          "status": "pass"
+        },
+        {
+          "number": 10,
+          "name": "API Gemini thiếu key trả 503 và không tự chuyển sang từ điển",
+          "status": "pass"
+        },
+        {
+          "number": 11,
+          "name": "Ảnh gửi bằng inlineData; trả văn bản OCR và kỹ năng để xác nhận",
+          "status": "pass"
+        },
+        {
+          "number": 12,
+          "name": "Ảnh rỗng, quá lớn, sai loại và giả MIME bị chặn trước khi gọi Gemini",
+          "status": "pass"
+        },
+        {
+          "number": 13,
+          "name": "Nhận JPEG và WEBP có chữ ký khớp MIME",
+          "status": "pass"
+        },
+        {
+          "number": 14,
+          "name": "Ảnh mờ, không phải CV hoặc quá ít chữ trả 422; OCR không đúng cấu trúc trả 502",
+          "status": "pass"
+        },
+        {
+          "number": 15,
+          "name": "Bằng chứng kỹ năng từ ảnh phải xuất hiện trong văn bản OCR",
+          "status": "pass"
+        },
+        {
+          "number": 16,
+          "name": "Đọc multipart đúng một ảnh; từ chối thiếu file, nhiều file, thêm trường và boundary lỗi",
+          "status": "pass"
+        },
+        {
+          "number": 17,
+          "name": "Giới hạn dung lượng ảnh và request thực tế, kể cả khi không có Content-Length",
+          "status": "pass"
+        },
+        {
+          "number": 18,
+          "name": "API ảnh kiểm tra Origin và Content-Type, lỗi không ghi đè nội dung CV",
+          "status": "pass"
+        },
+        {
+          "number": 19,
+          "name": "API ảnh hoạt động qua multipart và không trả API key hoặc dữ liệu ảnh",
+          "status": "pass"
+        }
+      ],
+      "total": 19,
+      "pass": 19,
+      "fail": 0
+    }
+  ],
+  "typecheck_exit_code": 0,
+  "stored_ranking_metrics_reproduced": true,
+  "dataset": {
+    "jobs": 16,
+    "candidates": 12,
+    "employers": 4,
+    "applications": 40,
+    "events": 118,
+    "salary_snapshots": 48,
+    "reference_date": "2026-10-29"
+  },
+  "profiles": [
+    {
+      "id": "C01",
+      "role": "frontend",
+      "split": "validation"
+    },
+    {
+      "id": "C02",
+      "role": "frontend",
+      "split": "test"
+    },
+    {
+      "id": "C03",
+      "role": "frontend",
+      "split": "test"
+    },
+    {
+      "id": "C04",
+      "role": "data",
+      "split": "validation"
+    },
+    {
+      "id": "C05",
+      "role": "data",
+      "split": "test"
+    },
+    {
+      "id": "C06",
+      "role": "data",
+      "split": "test"
+    },
+    {
+      "id": "C07",
+      "role": "backend",
+      "split": "validation"
+    },
+    {
+      "id": "C08",
+      "role": "backend",
+      "split": "test"
+    },
+    {
+      "id": "C09",
+      "role": "backend",
+      "split": "test"
+    },
+    {
+      "id": "C10",
+      "role": "content",
+      "split": "validation"
+    },
+    {
+      "id": "C11",
+      "role": "content",
+      "split": "test"
+    },
+    {
+      "id": "C12",
+      "role": "content",
+      "split": "test"
+    }
+  ],
+  "hashes": {
+    "data/fixtures.json": "caad9cd1af71f6e104d02d799df0f159c86f0bf4676304069433f305213e9259",
+    "lib/matching.mjs": "4d475bf1d7f301381b68f16fc2a5eede94226e96d7132203b42f9ccd0fab70cb",
+    "lib/cv-analysis.ts": "8673a1d47e22f6651512205627ecd0409f1a501495bb138a48c3383d07c737c4",
+    "lib/cv-image-upload.ts": "b478a0c38dd1a20a2d94bf75bcd3d7b259755fdb5c46fb6198e162e87f5de3a5",
+    "tests/evaluate.mjs": "8757eb5037c7540dd39598d3c7a8dd3f1cebfe797fa4fe2e964ab7f86110d6b9",
+    "tests/core.test.mjs": "6ecb5554b9aaf368eea5b410b2d2939b768f275131b155d1f78dba28ae6b92c7",
+    "tests/api.test.mjs": "770cd40c0fa3dbf79fd70ab962db0936a6d67de46e48b92fc338eb7a47d0f980",
+    "tests/cv-analysis.test.mjs": "ce24db11b823923f35a50754a9497b6579c68c1bf38af606227f95208cfa7407",
+    "drizzle/0000_puzzling_vulcan.sql": "698588548c106ee00e024ac65a8a20c8eead96e240ae837654b6d94318e972c7"
+  }
+}

@@ -1,0 +1,582 @@
+CampusMatch TH3  |  Trang 1
+Báo cáo kiểm thử hệ thống và đánh giá mô hình gợi
+ý việc làm
+CampusMatch TH3 | Nội dung đáp ứng checklist số 5
+Ngày lập báo cáo 05 tháng 11 năm 2026
+Kết quả tổng quát
+Hệ thống vượt qua 69/69 ca kiểm thử tự động và kiểm tra TypeScript. Trên 8 CV test giả lập, mô
+hình kết hợp đạt Precision@3 và Recall@3 bằng 100%, NDCG@3 bằng 0,9412. Các kết quả xác
+nhận hành vi của bản mẫu và khả năng xếp hạng theo nhãn kịch bản; chưa đủ cơ sở khẳng định hiệu
+quả tuyển dụng trên dữ liệu thực tế.
+1 Mục tiêu và phạm vi
+Báo cáo đánh giá tính đúng đắn của các chức năng xử lý CV, ghép việc, quản lý ứng tuyển và thống
+kê BI, đồng thời đo chất lượng danh sách gợi ý so với hai phương pháp đối chứng. Các ca thử bao
+gồm tình huống hợp lệ, dữ liệu sai, ràng buộc nghiệp vụ và lỗi khi tích hợp Gemini.
+Phạm vi gồm đọc CV văn bản hoặc ảnh, xác nhận hồ sơ, chấm điểm và xếp hạng CV-JD, gửi đơn và
+chuyển trạng thái, cùng các phép tổng hợp dashboard. Việc phân tích bằng Gemini được kiểm tra tự
+động bằng phản hồi mô phỏng. Báo cáo không đo tỷ lệ trúng tuyển, dự báo lương, chất lượng OCR
+trên ảnh thực hay năng lực phục vụ đồng thời nhiều người.
+1.1 Môi trường tái lập
+Thành phần
+Cấu hình ghi nhận
+Hệ điều hành
+Windows x64 phiên bản nhân 10.0.26200
+Node.js dùng cho lượt kiểm thử
+v24.22.1
+Mã mô hình
+tfidf-hybrid-2.0
+Backend và dữ liệu thử
+Handler REST và SQLite trong bộ nhớ, adapter D1
+Lệnh kiểm tra kiểu
+TypeScript --noEmit
+Ngày tham chiếu cho xếp hạng
+2026-10-29
+Ngày tham chiếu 29/10/2026 được giữ cố định khi đánh giá thứ hạng để kết quả không đổi do tin
+tuyển dụng hết hạn theo thời gian. Đây là ngày của kịch bản dữ liệu, khác ngày lập báo cáo.
+
+CampusMatch TH3  |  Trang 2
+2 Tập dữ liệu và cách chia tập
+Dữ liệu được tạo để mô phỏng quy trình tuyển dụng sinh viên. Các hồ sơ, doanh nghiệp, tin tuyển
+dụng và sự kiện đều là giả lập; không đại diện cho mẫu khảo sát thị trường lao động.
+Đối tượng
+Số lượng
+Vai trò trong kiểm thử
+Tin tuyển dụng JD
+16
+Danh sách công việc để xếp hạng
+CV ứng viên
+12
+4 validation và 8 test
+Doanh nghiệp
+4
+Liên kết với tin tuyển dụng
+Đơn ứng tuyển ban đầu
+40
+Kiểm tra nghiệp vụ và BI
+Sự kiện trạng thái
+118
+Tính phễu theo lịch sử của đơn
+Bản ghi lương công bố
+48
+Theo dõi lương trong 3 tháng
+2.1 Phân tách hồ sơ và tin tuyển dụng
+Bốn nhóm công việc gồm Frontend, Phân tích dữ liệu, Backend và Content Marketing. Mỗi nhóm
+có 4 tin tuyển dụng và 3 CV. Từ vựng cùng trọng số IDF được fit trên 12 JD train, mỗi nhóm 3 JD.
+Bốn tin J04, J08, J12 và J16 không tham gia bước fit.
+Tập validation gồm C01, C04, C07, C10. Tập test gồm C02, C03, C05, C06, C08, C09, C11, C12.
+CV và nhãn phù hợp không được dùng để fit IDF. Trọng số tính điểm được cố định, không tìm tối
+ưu trên tập test.
+Danh sách ứng viên được xếp hạng trên toàn bộ 16 tin, gồm cả 12 JD train và 4 JD ngoài tập fit. Vì
+vậy, đây là đánh giá trên hồ sơ được giữ riêng, không phải thử nghiệm cold-start hoàn toàn trên các
+tin mới.
+2.2 Nhãn mức độ phù hợp
+Nhãn
+Ý nghĩa
+Cách dùng
+0
+Không liên quan
+Tin không được gán nhãn riêng được xem là 0
+1
+Liên quan thấp
+Không tính là phù hợp trong Precision và Recall
+2
+Phù hợp
+Được tính là kết quả liên quan
+3
+Rất phù hợp
+Được tính là kết quả liên quan, gain cao hơn
+Nhãn do người thiết kế đặt theo kịch bản, chưa được chuyên gia tuyển dụng gán nhãn độc lập. Mỗi
+CV có đúng 3 tin mang nhãn từ 2 trở lên. Vì k = 3 và số tin phù hợp cũng bằng 3, Precision@3 và
+Recall@3 trùng nhau trên bộ dữ liệu này; hai giá trị không cung cấp hai bằng chứng độc lập.
+
+CampusMatch TH3  |  Trang 3
+3 Mô hình gợi ý và chỉ số đánh giá
+3.1 Quy trình tính điểm
+Hệ thống chuẩn hóa văn bản, ánh xạ các tên gọi kỹ năng về dạng thống nhất, loại bỏ một số từ dừng
+và tạo đặc trưng unigram, bigram. TF dùng trọng số 1 + ln(tần suất); IDF có làm trơn theo số văn
+bản train. Vector được chuẩn hóa L2 trước khi tính cosine. Mô hình hiện có 175 đặc trưng.
+ Score = 100 × (0,50C + 0,30T + 0,10L + 0,10M)
+Trong đó C là tỷ lệ kỹ năng yêu cầu mà ứng viên đáp ứng, T là cosine TF-IDF giữa CV và JD, L là
+mức khớp địa điểm, M là mức khớp hình thức làm việc. L và M nhận giá trị 0 hoặc 1; công việc
+Remote được xem là khớp địa điểm khi thông tin cần thiết đã có.
+Lịch làm là điều kiện lọc: mọi ngày công việc yêu cầu phải nằm trong các ngày ứng viên có thể làm.
+Tin đã đóng hoặc hết hạn bị loại. Tổng điểm chỉ được trả khi hồ sơ đã xác nhận, đủ dữ liệu và tin đủ
+điều kiện. Điểm được làm tròn một chữ số thập phân và không phải xác suất được tuyển.
+3.2 Chỉ số chất lượng danh sách
+ Precision@3 = h / 3      Recall@3 = h / r
+h là số tin trong ba vị trí đầu có nhãn từ 2 trở lên; r là tổng số tin phù hợp của hồ sơ. Kết quả cuối
+cùng là trung bình cộng theo 8 CV test, mỗi CV có trọng số bằng nhau.
+ DCG@3 = ∑i=13 gi / log2(i + 1)
+NDCG@3 = DCG@3 / IDCG@3
+Gain gᵢ dùng trực tiếp nhãn 0-3, không dùng gain lũy thừa. IDCG là DCG của thứ tự lý tưởng trên
+cùng nhãn của hồ sơ. NDCG@3 nằm trong khoảng 0-1, phản ánh cả chất lượng lẫn thứ tự các tin
+phù hợp.
+3.3 Hai phương pháp đối chứng
+TF-IDF thuần xếp tất cả tin theo cosine, dùng cùng từ vựng và IDF với mô hình kết hợp. Baseline
+thứ tự mã tin xếp tăng dần theo mã J01-J16. Khi điểm bằng nhau, mã tin được dùng để phá hòa một
+cách xác định.
+
+CampusMatch TH3  |  Trang 4
+4 Thiết kế và kết quả kiểm thử hệ thống
+Các ca thử được thực hiện trên môi trường phát triển. Những kiểm thử có ghi dữ liệu dùng SQLite
+trong bộ nhớ và adapter D1; không thao tác lên database ứng dụng đang sử dụng. Kiểm thử API gọi
+trực tiếp handler, không bao gồm mạng HTTP production.
+Nhóm kiểm thử
+Tổng
+Đạt
+Lỗi
+Lõi xử lý CV ghép việc BI và dữ liệu
+32
+32
+0
+API nghiệp vụ
+18
+18
+0
+Gemini và ảnh CV với phản hồi mô phỏng
+19
+19
+0
+Tổng cộng
+69
+69
+0
+Kiểm tra TypeScript hoàn thành với mã thoát 0. Tỷ lệ đạt 100% là tỷ lệ các ca đã thực thi, không
+phải độ bao phủ toàn bộ mã nguồn và không phải độ chính xác của mô hình AI.
+4.1 Các tình huống kiểm thử tiêu biểu
+Tình huống
+Kỳ vọng và kết quả
+CV rỗng hoặc vượt giới hạn
+Từ chối dữ liệu; các ca tương ứng đạt
+JavaScript và Java
+Nhận diện độc lập; không gộp sai kỹ năng
+Phủ định kỹ năng
+Câu chưa biết Python không tạo kỹ năng Python
+Tin đóng hết hạn hoặc trùng lịch
+Không trả tổng điểm phù hợp cho tin bị chặn
+Ứng tuyển trùng và giao dịch lỗi
+Ngăn đơn trùng; hoàn tác đơn cùng sự kiện khi lỗi
+Sửa CV sau khi gửi đơn
+Snapshot hồ sơ của đơn cũ được giữ nguyên
+Ảnh sai MIME hoặc vượt 5 MB
+Từ chối trước khi gửi tới Gemini
+Quota timeout và phản hồi AI lỗi
+Trả lỗi tương ứng; không lộ key qua dữ liệu lỗi
+4.2 Phạm vi bằng chứng Gemini và BI
+Các ca Gemini dùng phản hồi giả lập để kiểm tra cấu trúc request, JSON schema, dẫn chứng kỹ
+năng, lỗi dịch vụ và tải ảnh. Một số ảnh thử chỉ là dữ liệu tối thiểu hoặc chữ ký định dạng, không
+phải tập ảnh CV có nhãn. Vì vậy, 19/19 ca đạt chưa chứng minh độ chính xác OCR, khả năng đọc
+hiểu CV thật hay độ ổn định API Google.
+Các kiểm thử BI xác nhận không đếm trùng ứng viên, phễu theo lịch sử giảm dần, bộ lọc cohort hoạt
+động, tập rỗng trả tỷ lệ null và lương USD hoặc theo giờ không bị trộn vào chuỗi VND/tháng. Danh
+mục đầy đủ 69 ca được trình bày trong các phụ lục.
+
+CampusMatch TH3  |  Trang 5
+5 Kết quả đánh giá mô hình gợi ý
+Kết quả dưới đây được tái lập từ cùng fixture, cùng ngày tham chiếu và cùng chương trình đánh giá.
+Các chỉ số xếp hạng khớp với kết quả đã lưu trước đó trong dự án.
+Phương pháp
+Precision@3
+Recall@3
+NDCG@3
+TF-IDF kết hợp kỹ năng và tiêu chí
+100,00%
+100,00%
+0,9412
+TF-IDF cosine thuần
+75,00%
+75,00%
+0,8037
+Baseline thứ tự mã tin
+16,67%
+16,67%
+0,1937
+Hình 1 So sánh NDCG tại ba vị trí đầu trên 8 CV test giả lập
+Nguồn dữ liệu hình: data/evaluation.json. Hình làm tròn đến ba chữ số thập phân; bảng phía trên giữ
+bốn chữ số.
+5.1 Diễn giải kết quả
+Ở tập test, cả 24 vị trí trong 8 danh sách Top 3 đều có nhãn từ 2 trở lên. So với TF-IDF thuần, mô
+hình kết hợp tăng 25 điểm phần trăm Precision@3 và tăng 0,1375 NDCG@3. NDCG chưa bằng 1
+cho thấy thứ tự giữa tin rất phù hợp và tin phù hợp chưa luôn trùng với thứ tự lý tưởng.
+Tập validation gồm 4 CV đạt Precision@3 = 100%, Recall@3 = 100% và NDCG@3 = 0,9299. Các
+giá trị này dùng để kiểm tra tính nhất quán của kịch bản; không thể suy ra mức cải thiện tỷ lệ phỏng
+vấn hoặc tỷ lệ được tuyển.
+5.2 Điều kiện so sánh
+Mô hình kết hợp sử dụng điều kiện lọc lịch, trạng thái và hạn tin, trong khi hai baseline trong
+chương trình hiện tại xếp toàn bộ tin mà không áp cùng bộ lọc. Vì vậy, mức chênh lệch thể hiện hiệu
+quả toàn bộ quy trình đang triển khai, chưa cô lập lợi ích của riêng thành phần kỹ năng hoặc trọng
+số. Cần thêm đối chứng cùng điều kiện lọc và thí nghiệm bỏ từng thành phần để kết luận nguyên
+nhân cải thiện.
+
+CampusMatch TH3  |  Trang 6
+6 Kết quả theo hồ sơ và kiểm tra giao diện
+Mỗi hàng dưới đây tương ứng một CV test. Tên nhóm nghề được dùng để mô tả kịch bản; đây
+không phải biến dùng trực tiếp để cộng điểm trong công thức ghép việc.
+CV
+Nhóm nghề
+Tin đầu
+Điểm khớp
+NDCG@3
+C02
+Frontend
+J02
+95,8
+1,0000
+C03
+Frontend
+J04
+67,8
+0,9299
+C05
+Phân tích dữ liệu
+J08
+84,2
+0,9299
+C06
+Phân tích dữ liệu
+J06
+77,7
+0,9050
+C08
+Backend
+J12
+83,2
+0,9299
+C09
+Backend
+J12
+69,4
+0,9299
+C11
+Content Marketing
+J14
+96,7
+1,0000
+C12
+Content Marketing
+J14
+78,1
+0,9050
+Precision@3 và Recall@3 đều bằng 100% cho từng CV trong bảng. Điểm khớp tin đầu được tính
+theo công thức nghiệp vụ 0-100; NDCG dùng nhãn kỳ vọng để đánh giá thứ tự danh sách. Hai đại
+lượng có ý nghĩa khác nhau.
+6.1 Ví dụ giải thích điểm
+Với C01 và J04 thuộc tình huống validation, hệ thống ghi nhận tổng điểm 97,9. Các thành phần xấp
+xỉ gồm 50 điểm kỹ năng, 27,9 điểm tương đồng văn bản, 10 điểm địa điểm và 10 điểm hình thức. Ví
+dụ cho thấy người dùng có thể kiểm tra nguồn gốc tổng điểm; không chứng minh xác suất tuyển
+dụng 97,9%.
+6.2 Bằng chứng giao diện đã lưu
+Tệp data/ui-test-results.json ghi nhận 5 kịch bản giao diện đã đạt: dashboard nhận dữ liệu qua API,
+đọc CV bỏ trạng thái xác nhận và hiện dẫn chứng, lưu hồ sơ tạo danh sách gợi ý, gửi đơn đổi trạng
+thái nút và xem giải thích điểm. Đây là bằng chứng lịch sử của bản mẫu, không phải lượt kiểm thử
+giao diện mới trong ngày lập báo cáo và không cộng vào 69 ca tự động.
+Số liệu 12 ứng viên, 16 tin, 40 đơn và tỷ lệ tuyển 15% trong bằng chứng giao diện là số liệu của bộ
+seed giả lập. Chúng mô tả dashboard hoạt động với dữ liệu API, không thể dùng làm tỷ lệ tuyển
+thực tế hoặc kết quả đánh giá mô hình gợi ý.
+
+CampusMatch TH3  |  Trang 7
+7 Giới hạn và hướng cải tiến
+7.1 Giới hạn của kết quả
+• Quy mô nhỏ và nhãn tự đặt: 16 JD, 12 CV với cấu trúc tương đối đồng đều làm bài toán đơn giản
+hơn bối cảnh thực. Chưa có nhãn độc lập, đối chiếu chuyên gia hoặc dữ liệu ứng viên thật.
+• Kỹ năng xác nhận trong fixture: đánh giá xếp hạng dùng kỹ năng đã có trong hồ sơ mẫu, không đo
+sai số trích xuất rồi truyền tiếp sang thứ hạng. Các chỉ số không đánh giá chất lượng Gemini hoặc
+OCR.
+• Từ vựng giới hạn: TF-IDF chỉ học từ 12 JD và không hiểu đầy đủ ngữ nghĩa, kinh nghiệm, mức
+thành thạo hoặc các kỹ năng ngoài danh mục.
+• Thiết kế đối chứng chưa đồng nhất: điều kiện lọc khác nhau giữa mô hình kết hợp và baseline.
+Chưa có ablation, kiểm định thống kê hoặc khoảng tin cậy.
+• Kiểm thử chức năng chưa bao phủ mọi rủi ro: chưa đo coverage, tải đồng thời, đa trình duyệt, thiết
+bị di động thật, kiểm thử xâm nhập hoặc phân quyền đa doanh nghiệp.
+7.2 Thời gian xử lý
+Lượt tái lập ghi nhận trung vị 2,015 ms và lớn nhất 18,279 ms cho việc tính danh sách 16 tin, đo một
+lần cho mỗi trong 12 CV. Phép đo dùng performance.now trong một tiến trình Node.js, sau khi fit
+mô hình. Các giá trị không bao gồm truy vấn HTTP, database, tải ảnh, mạng hoặc Gemini, và không
+phải cam kết thời gian phản hồi production.
+7.3 Công việc cải tiến ưu tiên
+Ưu tiên bổ sung tập CV và JD đa dạng có đồng ý sử dụng, gán nhãn bởi ít nhất hai người đánh giá
+và giữ riêng tập test. Sau đó áp cùng điều kiện lọc cho các baseline, đo ảnh hưởng của từng thành
+phần điểm và đánh giá end-to-end từ CV hoặc ảnh đến danh sách việc làm. Độ trễ API, độ chính xác
+OCR và khả năng phục vụ đồng thời cần các bộ đo riêng.
+7.4 Kết luận
+CampusMatch đáp ứng việc kiểm thử trên dữ liệu mẫu và cung cấp kết quả đánh giá mô hình có thể
+tái lập. Lượt kiểm thử ghi nhận 69/69 ca đạt, TypeScript đạt và mô hình kết hợp đứng đầu các
+phương pháp đang so sánh trên tập test giả lập. Kết quả phù hợp để minh họa và kiểm chứng bản
+mẫu học phần; việc khẳng định hiệu quả tuyển dụng ngoài thực tế cần thêm dữ liệu độc lập và các
+phép đánh giá bổ sung.
+
+CampusMatch TH3  |  Trang 8
+8 Hướng dẫn tái lập và hồ sơ bằng chứng
+Tại thư mục gốc CampusMatch, dùng Node.js từ 22.13 trở lên và phiên bản pnpm được ghim trong
+package.json. Các lệnh dưới đây chạy kiểm thử cục bộ; không cần API key Gemini thật cho bộ kiểm
+thử tự động.
+pnpm install --frozen-lockfile
+node --test tests/core.test.mjs
+node --loader ./tests/ts-loader.mjs --test tests/api.test.mjs
+node --loader ./tests/ts-loader.mjs --test tests/cv-analysis.test.mjs
+node tests/evaluate.mjs
+pnpm exec tsc --noEmit
+Có thể dùng pnpm test để chạy gộp ba bộ kiểm thử. Lệnh tests/evaluate.mjs ghi lại data/model.json
+và data/evaluation.json; các chỉ số xếp hạng cần khớp bảng trong báo cáo, còn thời gian xử lý có thể
+thay đổi theo máy và lượt chạy. Việc chạy ứng dụng minh họa dùng pnpm run start hoặc start.cmd
+sau khi đã build và tạo database theo README.
+8.1 Nhật ký của lượt lập báo cáo
+Bộ bằng chứng tại docs/checklist5-evidence lưu nhật ký TAP của từng bộ thử, kết quả TypeScript,
+kết quả đánh giá riêng và mã SHA256 của các nguồn chính. Chương trình tái lập chỉ chuyển vị trí
+ghi kết quả đánh giá sang thư mục bằng chứng, giữ nguyên thuật toán trong tests/evaluate.mjs.
+Tệp trong checklist5-evidence
+Nội dung
+validation-summary.json
+Môi trường, tổng hợp 69 ca và SHA256 nguồn
+core.tap.log
+32 ca lõi và ràng buộc dữ liệu
+api.tap.log
+18 ca API nghiệp vụ
+gemini.tap.log
+19 ca Gemini và ảnh với phản hồi mô phỏng
+typecheck.log
+Kết quả kiểm tra TypeScript
+evaluation.json và model.json
+Chỉ số từng CV và mô hình dùng để đánh giá
+evaluation.log
+Tóm tắt đầu ra chương trình đánh giá
+8.2 Nguồn triển khai được đối chiếu
+data/fixtures.json; lib/matching.mjs; lib/cv-analysis.ts; lib/cv-image-upload.ts; tests/core.test.mjs;
+tests/api.test.mjs; tests/cv-analysis.test.mjs; tests/evaluate.mjs; data/ui-test-results.json;
+README.md.
+Các nguồn trên thuộc cùng dự án CampusMatch. Bằng chứng giao diện được ghi nhận riêng với
+kiểm thử handler và không được diễn giải thành kiểm thử HTTP production.
+
+CampusMatch TH3  |  Trang 9
+Phụ lục A Danh mục kiểm thử lõi
+Nguồn tests/core.test.mjs. Kết quả 32/32 ca đạt, 0 ca lỗi. Mã ca dưới đây được đánh số theo thứ tự
+thực thi trong bộ thử.
+Mã ca
+Nội dung kiểm thử
+Kết quả
+CORE01
+CV rỗng bị từ chối
+Đạt
+CORE02
+CV quá dài bị từ chối
+Đạt
+CORE03
+Không gộp JavaScript vào Java
+Đạt
+CORE04
+Java vẫn được nhận diện độc lập
+Đạt
+CORE05
+Alias JS và ReactJS được chuẩn hóa
+Đạt
+CORE06
+Không nhận Python trong câu chưa biết Python
+Đạt
+CORE07
+Vẫn nhận kỹ năng khi có bằng chứng dương khác
+Đạt
+CORE08
+Trả bằng chứng và yêu cầu xác nhận
+Đạt
+CORE09
+TF-IDF chỉ fit 12 JD train
+Đạt
+CORE10
+Từ ngoài từ vựng không thêm vào mô hình
+Đạt
+CORE11
+Cosine vector rỗng bằng 0
+Đạt
+CORE12
+Cosine tự so sánh bằng 1
+Đạt
+CORE13
+Điểm luôn nằm trong 0 đến 100
+Đạt
+CORE14
+Chưa xác nhận không có tổng điểm
+Đạt
+CORE15
+Thiếu lịch không tự giả định là khớp
+Đạt
+CORE16
+Trùng lịch bị loại dù kỹ năng khớp
+Đạt
+CORE17
+Tin đóng bị loại
+Đạt
+CORE18
+Tin hết hạn bị loại
+Đạt
+CORE19
+Remote không trừ điểm vì khác thành phố
+Đạt
+CORE20
+Tổng điểm khớp tổng các thành phần
+Đạt
+CORE21
+Giới tính và tuổi không ảnh hưởng điểm
+Đạt
+CORE22
+Hạng cao nhất cùng nhóm nghề của hồ sơ
+Đạt
+CORE23
+Funnel đơn từng đi qua và giảm dần
+Đạt
+CORE24
+BI không cộng trùng ứng viên
+Đạt
+CORE25
+Cohort rỗng trả tỷ lệ null
+Đạt
+CORE26
+Không trộn lương USD hoặc theo giờ
+Đạt
+CORE27
+Lọc BI theo thành phố và cohort ngày gửi
+Đạt
+CORE28
+Không cho chuyển trực tiếp từ gửi đơn sang tuyển
+Đạt
+CORE29
+Khóa ngoại từ chối đơn không có ứng viên
+Đạt
+CORE30
+UNIQUE ngăn ứng tuyển trùng
+Đạt
+CORE31
+Sửa CV không làm đổi snapshot đơn cũ
+Đạt
+CORE32
+Giao dịch lỗi hoàn tác cả đơn và sự kiện
+Đạt
+
+CampusMatch TH3  |  Trang 10
+Phụ lục B Danh mục kiểm thử API
+Nguồn tests/api.test.mjs. Kết quả 18/18 ca đạt, 0 ca lỗi. Mã ca dưới đây được đánh số theo thứ tự
+thực thi trong bộ thử.
+Mã ca
+Nội dung kiểm thử
+Kết quả
+API01
+Khởi tạo dữ liệu có tính lặp lại an toàn
+Đạt
+API02
+API đọc CV trả kỹ năng và bằng chứng
+Đạt
+API03
+API từ chối JSON null
+Đạt
+API04
+API từ chối JSON sai cú pháp
+Đạt
+API05
+API từ chối CV rỗng
+Đạt
+API06
+API từ chối Origin khác
+Đạt
+API07
+API từ chối hồ sơ chưa xác nhận
+Đạt
+API08
+Lưu hồ sơ xác nhận vào CSDL
+Đạt
+API09
+API match có phiên bản và thành phần điểm
+Đạt
+API10
+Không tìm thấy hồ sơ trả 404
+Đạt
+API11
+Đăng tin với lương sai bị từ chối
+Đạt
+API12
+Đăng tin hợp lệ tạo tin và snapshot lương
+Đạt
+API13
+Gửi đơn tạo dữ liệu bền vững
+Đạt
+API14
+Ứng tuyển trùng trả 409
+Đạt
+API15
+Chuyển trạng thái sai bị từ chối
+Đạt
+API16
+Chuyển trạng thái hợp lệ lưu lịch sử
+Đạt
+API17
+Sửa CV không đổi snapshot đơn gửi trước
+Đạt
+API18
+BI cohort rỗng không chia cho 0
+Đạt
+
+CampusMatch TH3  |  Trang 11
+Phụ lục C Danh mục kiểm thử Gemini và ảnh CV
+Nguồn tests/cv-analysis.test.mjs. Kết quả 19/19 ca đạt, 0 ca lỗi. Mã ca dưới đây được đánh số theo
+thứ tự thực thi trong bộ thử.
+Mã ca
+Nội dung kiểm thử
+Kết quả
+AI01
+Chưa có key: báo cấu hình, không gửi CV ra ngoài
+Đạt
+AI02
+CV không hợp lệ bị từ chối trước khi gọi Gemini
+Đạt
+AI03
+Gọi Gemini từ backend với header key và schema; giữ bước xác nhận
+Đạt
+AI04
+Loại kỹ năng có bằng chứng bịa, loại trùng và không đưa kỹ năng mới vào điểm ghép việc
+Đạt
+AI05
+Không chấp nhận cấu trúc sai, kỹ năng ngoài danh mục hoặc kết quả bị cắt
+Đạt
+AI06
+Lỗi quota, quyền, model và dịch vụ có thông báo riêng; không lộ lỗi gốc
+Đạt
+AI07
+Lỗi mạng và hết thời gian không lộ thông tin request
+Đạt
+AI08
+Model tùy chọn bị giới hạn ở tên model, không cho thay host hoặc đường dẫn
+Đạt
+AI09
+API config chỉ trả trạng thái, API chọn Gemini và từ điển tách biệt
+Đạt
+AI10
+API Gemini thiếu key trả 503 và không tự chuyển sang từ điển
+Đạt
+AI11
+Ảnh gửi bằng inlineData; trả văn bản OCR và kỹ năng để xác nhận
+Đạt
+AI12
+Ảnh rỗng, quá lớn, sai loại và giả MIME bị chặn trước khi gọi Gemini
+Đạt
+AI13
+Nhận JPEG và WEBP có chữ ký khớp MIME
+Đạt
+AI14
+Ảnh mờ, không phải CV hoặc quá ít chữ trả 422; OCR không đúng cấu trúc trả 502
+Đạt
+AI15
+Bằng chứng kỹ năng từ ảnh phải xuất hiện trong văn bản OCR
+Đạt
+AI16
+Đọc multipart đúng một ảnh; từ chối thiếu file, nhiều file, thêm trường và boundary lỗi
+Đạt
+AI17
+Giới hạn dung lượng ảnh và request thực tế, kể cả khi không có Content-Length
+Đạt
+AI18
+API ảnh kiểm tra Origin và Content-Type, lỗi không ghi đè nội dung CV
+Đạt
+AI19
+API ảnh hoạt động qua multipart và không trả API key hoặc dữ liệu ảnh
+Đạt
+Các trạng thái ảnh mờ, ảnh không phải CV và lỗi Google được mô phỏng trong kiểm thử. Việc ca
+thử đạt xác nhận cách hệ thống xử lý đầu ra và lỗi, không xác nhận khả năng thị giác của mô hình
+trên tập ảnh thật.

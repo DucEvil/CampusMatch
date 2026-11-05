@@ -1,0 +1,122 @@
+TAP version 13
+# (node:1628) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+# --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./tests/ts-loader.mjs", pathToFileURL("./")); register("./tests/ts-loader.mjs", pathToFileURL("./"));'
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Khởi tạo dữ liệu có tính lặp lại an toàn
+ok 1 - Khởi tạo dữ liệu có tính lặp lại an toàn
+  ---
+  duration_ms: 57.0921
+  type: 'test'
+  ...
+# Subtest: API đọc CV trả kỹ năng và bằng chứng
+ok 2 - API đọc CV trả kỹ năng và bằng chứng
+  ---
+  duration_ms: 1.5756
+  type: 'test'
+  ...
+# Subtest: API từ chối JSON null
+ok 3 - API từ chối JSON null
+  ---
+  duration_ms: 1.0858
+  type: 'test'
+  ...
+# Subtest: API từ chối JSON sai cú pháp
+ok 4 - API từ chối JSON sai cú pháp
+  ---
+  duration_ms: 1.2525
+  type: 'test'
+  ...
+# Subtest: API từ chối CV rỗng
+ok 5 - API từ chối CV rỗng
+  ---
+  duration_ms: 0.8297
+  type: 'test'
+  ...
+# Subtest: API từ chối Origin khác
+ok 6 - API từ chối Origin khác
+  ---
+  duration_ms: 0.5547
+  type: 'test'
+  ...
+# Subtest: API từ chối hồ sơ chưa xác nhận
+ok 7 - API từ chối hồ sơ chưa xác nhận
+  ---
+  duration_ms: 1.6257
+  type: 'test'
+  ...
+# Subtest: Lưu hồ sơ xác nhận vào CSDL
+ok 8 - Lưu hồ sơ xác nhận vào CSDL
+  ---
+  duration_ms: 1.5905
+  type: 'test'
+  ...
+# Subtest: API match có phiên bản và thành phần điểm
+ok 9 - API match có phiên bản và thành phần điểm
+  ---
+  duration_ms: 16.7816
+  type: 'test'
+  ...
+# Subtest: Không tìm thấy hồ sơ trả 404
+ok 10 - Không tìm thấy hồ sơ trả 404
+  ---
+  duration_ms: 1.2872
+  type: 'test'
+  ...
+# Subtest: Đăng tin với lương sai bị từ chối
+ok 11 - Đăng tin với lương sai bị từ chối
+  ---
+  duration_ms: 1.2014
+  type: 'test'
+  ...
+# Subtest: Đăng tin hợp lệ tạo tin và snapshot lương
+ok 12 - Đăng tin hợp lệ tạo tin và snapshot lương
+  ---
+  duration_ms: 3.3544
+  type: 'test'
+  ...
+# Subtest: Gửi đơn tạo dữ liệu bền vững
+ok 13 - Gửi đơn tạo dữ liệu bền vững
+  ---
+  duration_ms: 1.4749
+  type: 'test'
+  ...
+# Subtest: Ứng tuyển trùng trả 409
+ok 14 - Ứng tuyển trùng trả 409
+  ---
+  duration_ms: 1.1759
+  type: 'test'
+  ...
+# Subtest: Chuyển trạng thái sai bị từ chối
+ok 15 - Chuyển trạng thái sai bị từ chối
+  ---
+  duration_ms: 2.2953
+  type: 'test'
+  ...
+# Subtest: Chuyển trạng thái hợp lệ lưu lịch sử
+ok 16 - Chuyển trạng thái hợp lệ lưu lịch sử
+  ---
+  duration_ms: 3.6593
+  type: 'test'
+  ...
+# Subtest: Sửa CV không đổi snapshot đơn gửi trước
+ok 17 - Sửa CV không đổi snapshot đơn gửi trước
+  ---
+  duration_ms: 6.6315
+  type: 'test'
+  ...
+# Subtest: BI cohort rỗng không chia cho 0
+ok 18 - BI cohort rỗng không chia cho 0
+  ---
+  duration_ms: 1.7403
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 662.0648
+

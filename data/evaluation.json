@@ -1,0 +1,447 @@
+{
+  "dataset": "Dữ liệu và nhãn kỳ vọng giả lập do người thiết kế tạo, chưa được chuyên gia tuyển dụng xác nhận.",
+  "model_version": "tfidf-hybrid-2.0",
+  "train_job_documents": 12,
+  "held_out_job_documents": 4,
+  "vocabulary_size": 175,
+  "validation_candidates": 4,
+  "test_candidates": 8,
+  "k": 3,
+  "positive_grade_threshold": 2,
+  "grade_scale": "0 không liên quan, 1 liên quan thấp, 2 phù hợp, 3 rất phù hợp",
+  "metrics": {
+    "test": {
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9412
+      },
+      "tfidf": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "ndcg": 0.8037
+      },
+      "alphabetical": {
+        "precision": 0.1667,
+        "recall": 0.1667,
+        "ndcg": 0.1937
+      }
+    },
+    "validation": {
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9299
+      }
+    }
+  },
+  "latency_ms": {
+    "median": 1.9157999999999973,
+    "max": 10.576
+  },
+  "limitations": [
+    "Nhãn được đặt theo kịch bản, chưa có đánh giá chuyên gia độc lập.",
+    "Tập nhỏ gồm 16 tin và 12 CV giả lập, không đại diện thị trường.",
+    "Không dùng nhãn test để fit IDF hoặc điều chỉnh trọng số. Fit 12 mô tả train, không fit trên CV.",
+    "Xếp hạng trên toàn bộ 16 tin. Đây là holdout hồ sơ, không phải kiểm thử thuần cold-start tin.",
+    "Thời gian đo là tính toán trong Node trên máy phát triển, không phải độ trễ API production."
+  ],
+  "rows": [
+    {
+      "candidate_id": "C01",
+      "split": "validation",
+      "recommendations": [
+        {
+          "job_id": "J04",
+          "score": 97.9
+        },
+        {
+          "job_id": "J01",
+          "score": 97.4
+        },
+        {
+          "job_id": "J02",
+          "score": 95.2
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9298593499260985
+      },
+      "tfidf": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.834835908247115
+      },
+      "alphabetical": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.9049765583210164
+      }
+    },
+    {
+      "candidate_id": "C02",
+      "split": "test",
+      "recommendations": [
+        {
+          "job_id": "J02",
+          "score": 95.8
+        },
+        {
+          "job_id": "J04",
+          "score": 82.9
+        },
+        {
+          "job_id": "J01",
+          "score": 72.4
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 1
+      },
+      "tfidf": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 1
+      },
+      "alphabetical": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.834835908247115
+      }
+    },
+    {
+      "candidate_id": "C03",
+      "split": "test",
+      "recommendations": [
+        {
+          "job_id": "J04",
+          "score": 67.8
+        },
+        {
+          "job_id": "J03",
+          "score": 67.1
+        },
+        {
+          "job_id": "J02",
+          "score": 58.2
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9298593499260985
+      },
+      "tfidf": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.7850703250369506
+      },
+      "alphabetical": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.7149296749630493
+      }
+    },
+    {
+      "candidate_id": "C04",
+      "split": "validation",
+      "recommendations": [
+        {
+          "job_id": "J08",
+          "score": 97.8
+        },
+        {
+          "job_id": "J05",
+          "score": 97.4
+        },
+        {
+          "job_id": "J06",
+          "score": 95.5
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9298593499260985
+      },
+      "tfidf": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.834835908247115
+      },
+      "alphabetical": {
+        "precision": 0,
+        "recall": 0,
+        "ndcg": 0
+      }
+    },
+    {
+      "candidate_id": "C05",
+      "split": "test",
+      "recommendations": [
+        {
+          "job_id": "J08",
+          "score": 84.2
+        },
+        {
+          "job_id": "J06",
+          "score": 77.6
+        },
+        {
+          "job_id": "J05",
+          "score": 73.8
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9298593499260985
+      },
+      "tfidf": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.7149296749630493
+      },
+      "alphabetical": {
+        "precision": 0,
+        "recall": 0,
+        "ndcg": 0
+      }
+    },
+    {
+      "candidate_id": "C06",
+      "split": "test",
+      "recommendations": [
+        {
+          "job_id": "J06",
+          "score": 77.7
+        },
+        {
+          "job_id": "J08",
+          "score": 69
+        },
+        {
+          "job_id": "J07",
+          "score": 68.3
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9049765583210164
+      },
+      "tfidf": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.7149296749630493
+      },
+      "alphabetical": {
+        "precision": 0,
+        "recall": 0,
+        "ndcg": 0
+      }
+    },
+    {
+      "candidate_id": "C07",
+      "split": "validation",
+      "recommendations": [
+        {
+          "job_id": "J12",
+          "score": 98.1
+        },
+        {
+          "job_id": "J09",
+          "score": 97.7
+        },
+        {
+          "job_id": "J10",
+          "score": 95.8
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9298593499260985
+      },
+      "tfidf": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.834835908247115
+      },
+      "alphabetical": {
+        "precision": 0,
+        "recall": 0,
+        "ndcg": 0
+      }
+    },
+    {
+      "candidate_id": "C08",
+      "split": "test",
+      "recommendations": [
+        {
+          "job_id": "J12",
+          "score": 83.2
+        },
+        {
+          "job_id": "J10",
+          "score": 78
+        },
+        {
+          "job_id": "J09",
+          "score": 72.8
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9298593499260985
+      },
+      "tfidf": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.7149296749630493
+      },
+      "alphabetical": {
+        "precision": 0,
+        "recall": 0,
+        "ndcg": 0
+      }
+    },
+    {
+      "candidate_id": "C09",
+      "split": "test",
+      "recommendations": [
+        {
+          "job_id": "J12",
+          "score": 69.4
+        },
+        {
+          "job_id": "J11",
+          "score": 68.7
+        },
+        {
+          "job_id": "J10",
+          "score": 60
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9298593499260985
+      },
+      "tfidf": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.7850703250369506
+      },
+      "alphabetical": {
+        "precision": 0,
+        "recall": 0,
+        "ndcg": 0
+      }
+    },
+    {
+      "candidate_id": "C10",
+      "split": "validation",
+      "recommendations": [
+        {
+          "job_id": "J16",
+          "score": 98.2
+        },
+        {
+          "job_id": "J13",
+          "score": 97.7
+        },
+        {
+          "job_id": "J14",
+          "score": 95.8
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9298593499260985
+      },
+      "tfidf": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.834835908247115
+      },
+      "alphabetical": {
+        "precision": 0,
+        "recall": 0,
+        "ndcg": 0
+      }
+    },
+    {
+      "candidate_id": "C11",
+      "split": "test",
+      "recommendations": [
+        {
+          "job_id": "J14",
+          "score": 96.7
+        },
+        {
+          "job_id": "J16",
+          "score": 83.8
+        },
+        {
+          "job_id": "J13",
+          "score": 73.4
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 1
+      },
+      "tfidf": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 1
+      },
+      "alphabetical": {
+        "precision": 0,
+        "recall": 0,
+        "ndcg": 0
+      }
+    },
+    {
+      "candidate_id": "C12",
+      "split": "test",
+      "recommendations": [
+        {
+          "job_id": "J14",
+          "score": 78.1
+        },
+        {
+          "job_id": "J16",
+          "score": 69.4
+        },
+        {
+          "job_id": "J15",
+          "score": 68.7
+        }
+      ],
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9049765583210164
+      },
+      "tfidf": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "ndcg": 0.7149296749630493
+      },
+      "alphabetical": {
+        "precision": 0,
+        "recall": 0,
+        "ndcg": 0
+      }
+    }
+  ]
+}

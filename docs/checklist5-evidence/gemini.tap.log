@@ -1,0 +1,128 @@
+TAP version 13
+# (node:17460) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+# --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./tests/ts-loader.mjs", pathToFileURL("./")); register("./tests/ts-loader.mjs", pathToFileURL("./"));'
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Chưa có key: báo cấu hình, không gửi CV ra ngoài
+ok 1 - Chưa có key: báo cấu hình, không gửi CV ra ngoài
+  ---
+  duration_ms: 2.419
+  type: 'test'
+  ...
+# Subtest: CV không hợp lệ bị từ chối trước khi gọi Gemini
+ok 2 - CV không hợp lệ bị từ chối trước khi gọi Gemini
+  ---
+  duration_ms: 0.2122
+  type: 'test'
+  ...
+# Subtest: Gọi Gemini từ backend với header key và schema; giữ bước xác nhận
+ok 3 - Gọi Gemini từ backend với header key và schema; giữ bước xác nhận
+  ---
+  duration_ms: 22.6735
+  type: 'test'
+  ...
+# Subtest: Loại kỹ năng có bằng chứng bịa, loại trùng và không đưa kỹ năng mới vào điểm ghép việc
+ok 4 - Loại kỹ năng có bằng chứng bịa, loại trùng và không đưa kỹ năng mới vào điểm ghép việc
+  ---
+  duration_ms: 1.8493
+  type: 'test'
+  ...
+# Subtest: Không chấp nhận cấu trúc sai, kỹ năng ngoài danh mục hoặc kết quả bị cắt
+ok 5 - Không chấp nhận cấu trúc sai, kỹ năng ngoài danh mục hoặc kết quả bị cắt
+  ---
+  duration_ms: 1.9828
+  type: 'test'
+  ...
+# Subtest: Lỗi quota, quyền, model và dịch vụ có thông báo riêng; không lộ lỗi gốc
+ok 6 - Lỗi quota, quyền, model và dịch vụ có thông báo riêng; không lộ lỗi gốc
+  ---
+  duration_ms: 2.1929
+  type: 'test'
+  ...
+# Subtest: Lỗi mạng và hết thời gian không lộ thông tin request
+ok 7 - Lỗi mạng và hết thời gian không lộ thông tin request
+  ---
+  duration_ms: 0.6454
+  type: 'test'
+  ...
+# Subtest: Model tùy chọn bị giới hạn ở tên model, không cho thay host hoặc đường dẫn
+ok 8 - Model tùy chọn bị giới hạn ở tên model, không cho thay host hoặc đường dẫn
+  ---
+  duration_ms: 0.9988
+  type: 'test'
+  ...
+# Subtest: API config chỉ trả trạng thái, API chọn Gemini và từ điển tách biệt
+ok 9 - API config chỉ trả trạng thái, API chọn Gemini và từ điển tách biệt
+  ---
+  duration_ms: 4.7322
+  type: 'test'
+  ...
+# Subtest: API Gemini thiếu key trả 503 và không tự chuyển sang từ điển
+ok 10 - API Gemini thiếu key trả 503 và không tự chuyển sang từ điển
+  ---
+  duration_ms: 0.6725
+  type: 'test'
+  ...
+# Subtest: Ảnh gửi bằng inlineData; trả văn bản OCR và kỹ năng để xác nhận
+ok 11 - Ảnh gửi bằng inlineData; trả văn bản OCR và kỹ năng để xác nhận
+  ---
+  duration_ms: 1.1349
+  type: 'test'
+  ...
+# Subtest: Ảnh rỗng, quá lớn, sai loại và giả MIME bị chặn trước khi gọi Gemini
+ok 12 - Ảnh rỗng, quá lớn, sai loại và giả MIME bị chặn trước khi gọi Gemini
+  ---
+  duration_ms: 0.2551
+  type: 'test'
+  ...
+# Subtest: Nhận JPEG và WEBP có chữ ký khớp MIME
+ok 13 - Nhận JPEG và WEBP có chữ ký khớp MIME
+  ---
+  duration_ms: 0.5812
+  type: 'test'
+  ...
+# Subtest: Ảnh mờ, không phải CV hoặc quá ít chữ trả 422; OCR không đúng cấu trúc trả 502
+ok 14 - Ảnh mờ, không phải CV hoặc quá ít chữ trả 422; OCR không đúng cấu trúc trả 502
+  ---
+  duration_ms: 1.3207
+  type: 'test'
+  ...
+# Subtest: Bằng chứng kỹ năng từ ảnh phải xuất hiện trong văn bản OCR
+ok 15 - Bằng chứng kỹ năng từ ảnh phải xuất hiện trong văn bản OCR
+  ---
+  duration_ms: 0.3372
+  type: 'test'
+  ...
+# Subtest: Đọc multipart đúng một ảnh; từ chối thiếu file, nhiều file, thêm trường và boundary lỗi
+ok 16 - Đọc multipart đúng một ảnh; từ chối thiếu file, nhiều file, thêm trường và boundary lỗi
+  ---
+  duration_ms: 13.0166
+  type: 'test'
+  ...
+# Subtest: Giới hạn dung lượng ảnh và request thực tế, kể cả khi không có Content-Length
+ok 17 - Giới hạn dung lượng ảnh và request thực tế, kể cả khi không có Content-Length
+  ---
+  duration_ms: 13.0383
+  type: 'test'
+  ...
+# Subtest: API ảnh kiểm tra Origin và Content-Type, lỗi không ghi đè nội dung CV
+ok 18 - API ảnh kiểm tra Origin và Content-Type, lỗi không ghi đè nội dung CV
+  ---
+  duration_ms: 1.7851
+  type: 'test'
+  ...
+# Subtest: API ảnh hoạt động qua multipart và không trả API key hoặc dữ liệu ảnh
+ok 19 - API ảnh hoạt động qua multipart và không trả API key hoặc dữ liệu ảnh
+  ---
+  duration_ms: 3.301
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 554.7652
+

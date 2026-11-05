@@ -1,0 +1,96 @@
+{
+  "recorded_at": "2026-11-05T17:13:18.728Z",
+  "local_date": "2026-11-06",
+  "unit_and_api_tests": {
+    "total": 84,
+    "pass": 84,
+    "fail": 0,
+    "suites": {
+      "core": 32,
+      "api": 18,
+      "cv_and_image": 19,
+      "career": 15
+    },
+    "gemini": "mock responses; no real Google call"
+  },
+  "typecheck": {
+    "command": "node node_modules/typescript/bin/tsc --noEmit",
+    "exit_code": 0
+  },
+  "production_build": {
+    "command": "node scripts/run-framework.mjs build",
+    "exit_code": 0
+  },
+  "production_http_smoke": {
+    "health": 200,
+    "empty_consult_input": 400,
+    "cross_origin_consult": 403,
+    "homepage": 200,
+    "new_navigation_present": true
+  },
+  "browser": {
+    "date": "2026-11-05T17:12:14.234Z",
+    "environment": "Headless Microsoft Edge (Chromium), local production build; Google replies mocked; synthetic CV/JD",
+    "checks": [
+      {
+        "name": "Form ban đầu rỗng, phân tích bị chặn khi thiếu CV/JD",
+        "status": "pass"
+      },
+      {
+        "name": "Đối chiếu đúng cặp CV–JD; hiển thị ba gap và tỷ lệ bằng chứng 25%",
+        "status": "pass"
+      },
+      {
+        "name": "Bộ lọc phân biệt yêu cầu có bằng chứng với các khoảng trống",
+        "status": "pass"
+      },
+      {
+        "name": "Xuất Markdown cần cả hai xác nhận; tệp có đối chiếu, outline và khung video",
+        "status": "pass"
+      },
+      {
+        "name": "Chuyển tab giữ nội dung và kết quả tư vấn",
+        "status": "pass"
+      },
+      {
+        "name": "Sửa JD xóa kết quả và xác nhận cũ",
+        "status": "pass"
+      },
+      {
+        "name": "Lỗi quota giữ dữ liệu nhập và không hiện kết quả giả",
+        "status": "pass"
+      },
+      {
+        "name": "Ít hơn ba gap hiển thị cảnh báo, không tự đánh dấu đủ checklist",
+        "status": "pass"
+      },
+      {
+        "name": "Viewport 390px không tràn ngang ở form và kết quả",
+        "status": "pass"
+      },
+      {
+        "name": "Không có lỗi JavaScript trong các luồng đã thử",
+        "status": "pass"
+      }
+    ],
+    "pageErrors": []
+  },
+  "visual_review": {
+    "desktop": "1440x1000",
+    "mobile": "390x844",
+    "result": "Reviewed input, gaps, outline and mobile pages; no clipping or horizontal overflow observed."
+  },
+  "limitations": [
+    "Synthetic CV/JD and mocked Gemini replies used for automated tests.",
+    "Real CV/JD quality review, live Gemini response, video recording and submission remain user-provided demo steps."
+  ],
+  "source_sha256": {
+    "lib/career-analysis.ts": "229e8d93a357e274ef30b08a5bba9773f34128185031f05f9f85b42acd5416a2",
+    "lib/career-report.ts": "61de36e953295b6f8793241b8313f1c98ef8f7b3ebdaeb1c200fa1499b02de8d",
+    "components/career-workspace.tsx": "cd28e4acba4f3ac51a078a6b055541e99dd9dc41c7974f3728a5d6c16d4b7c84",
+    "app/page.tsx": "6ff75e7046d962aaf18168d465ac4110433271552fead8f6ae7cf05b8606495f",
+    "app/api/[...path]/route.ts": "4615e49b4fd64f313842569c663cb1642dc0bd8f97c5450ee45bd4d529990dd2",
+    "app/globals.css": "f43bea9197198327d0313337871cdbf350c055da0dd9e4382d388b25e0b7ce84",
+    "tests/career-analysis.test.mjs": "6ab1b373bd20a151e423b00fd1ae6ebd4b6dda23ff6e503348e03d2f20d5b7d6"
+  }
+}

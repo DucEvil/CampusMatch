@@ -1,0 +1,77 @@
+{
+  "count": 18,
+  "results": [
+    {
+      "name": "Khởi tạo dữ liệu có tính lặp lại an toàn",
+      "status": "pass"
+    },
+    {
+      "name": "API đọc CV trả kỹ năng và bằng chứng",
+      "status": "pass"
+    },
+    {
+      "name": "API từ chối JSON null",
+      "status": "pass"
+    },
+    {
+      "name": "API từ chối JSON sai cú pháp",
+      "status": "pass"
+    },
+    {
+      "name": "API từ chối CV rỗng",
+      "status": "pass"
+    },
+    {
+      "name": "API từ chối Origin khác",
+      "status": "pass"
+    },
+    {
+      "name": "API từ chối hồ sơ chưa xác nhận",
+      "status": "pass"
+    },
+    {
+      "name": "Lưu hồ sơ xác nhận vào CSDL",
+      "status": "pass"
+    },
+    {
+      "name": "API match có phiên bản và thành phần điểm",
+      "status": "pass"
+    },
+    {
+      "name": "Không tìm thấy hồ sơ trả 404",
+      "status": "pass"
+    },
+    {
+      "name": "Đăng tin với lương sai bị từ chối",
+      "status": "pass"
+    },
+    {
+      "name": "Đăng tin hợp lệ tạo tin và snapshot lương",
+      "status": "pass"
+    },
+    {
+      "name": "Gửi đơn tạo dữ liệu bền vững",
+      "status": "pass"
+    },
+    {
+      "name": "Ứng tuyển trùng trả 409",
+      "status": "pass"
+    },
+    {
+      "name": "Chuyển trạng thái sai bị từ chối",
+      "status": "pass"
+    },
+    {
+      "name": "Chuyển trạng thái hợp lệ lưu lịch sử",
+      "status": "pass"
+    },
+    {
+      "name": "Sửa CV không đổi snapshot đơn gửi trước",
+      "status": "pass"
+    },
+    {
+      "name": "BI cohort rỗng không chia cho 0",
+      "status": "pass"
+    }
+  ]
+}

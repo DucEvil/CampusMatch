@@ -1,0 +1,526 @@
+TAP version 13
+# (node:13960) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+# --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./tests/ts-loader.mjs", pathToFileURL("./")); register("./tests/ts-loader.mjs", pathToFileURL("./"));'
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Khởi tạo dữ liệu có tính lặp lại an toàn
+ok 1 - Khởi tạo dữ liệu có tính lặp lại an toàn
+  ---
+  duration_ms: 54.1554
+  type: 'test'
+  ...
+# Subtest: API đọc CV trả kỹ năng và bằng chứng
+ok 2 - API đọc CV trả kỹ năng và bằng chứng
+  ---
+  duration_ms: 1.6514
+  type: 'test'
+  ...
+# Subtest: API từ chối JSON null
+ok 3 - API từ chối JSON null
+  ---
+  duration_ms: 0.6485
+  type: 'test'
+  ...
+# Subtest: API từ chối JSON sai cú pháp
+ok 4 - API từ chối JSON sai cú pháp
+  ---
+  duration_ms: 0.5516
+  type: 'test'
+  ...
+# Subtest: API từ chối CV rỗng
+ok 5 - API từ chối CV rỗng
+  ---
+  duration_ms: 0.6113
+  type: 'test'
+  ...
+# Subtest: API từ chối Origin khác
+ok 6 - API từ chối Origin khác
+  ---
+  duration_ms: 0.4908
+  type: 'test'
+  ...
+# Subtest: API từ chối hồ sơ chưa xác nhận
+ok 7 - API từ chối hồ sơ chưa xác nhận
+  ---
+  duration_ms: 2.4801
+  type: 'test'
+  ...
+# Subtest: Lưu hồ sơ xác nhận vào CSDL
+ok 8 - Lưu hồ sơ xác nhận vào CSDL
+  ---
+  duration_ms: 3.0651
+  type: 'test'
+  ...
+# Subtest: API match có phiên bản và thành phần điểm
+ok 9 - API match có phiên bản và thành phần điểm
+  ---
+  duration_ms: 20.2439
+  type: 'test'
+  ...
+# Subtest: Không tìm thấy hồ sơ trả 404
+ok 10 - Không tìm thấy hồ sơ trả 404
+  ---
+  duration_ms: 2.7207
+  type: 'test'
+  ...
+# Subtest: Đăng tin với lương sai bị từ chối
+ok 11 - Đăng tin với lương sai bị từ chối
+  ---
+  duration_ms: 2.6829
+  type: 'test'
+  ...
+# Subtest: Đăng tin hợp lệ tạo tin và snapshot lương
+ok 12 - Đăng tin hợp lệ tạo tin và snapshot lương
+  ---
+  duration_ms: 6.2834
+  type: 'test'
+  ...
+# Subtest: Gửi đơn tạo dữ liệu bền vững
+ok 13 - Gửi đơn tạo dữ liệu bền vững
+  ---
+  duration_ms: 2.5561
+  type: 'test'
+  ...
+# Subtest: Ứng tuyển trùng trả 409
+ok 14 - Ứng tuyển trùng trả 409
+  ---
+  duration_ms: 3.4127
+  type: 'test'
+  ...
+# Subtest: Chuyển trạng thái sai bị từ chối
+ok 15 - Chuyển trạng thái sai bị từ chối
+  ---
+  duration_ms: 1.536
+  type: 'test'
+  ...
+# Subtest: Chuyển trạng thái hợp lệ lưu lịch sử
+ok 16 - Chuyển trạng thái hợp lệ lưu lịch sử
+  ---
+  duration_ms: 4.635
+  type: 'test'
+  ...
+# Subtest: Sửa CV không đổi snapshot đơn gửi trước
+ok 17 - Sửa CV không đổi snapshot đơn gửi trước
+  ---
+  duration_ms: 7.049
+  type: 'test'
+  ...
+# Subtest: BI cohort rỗng không chia cho 0
+ok 18 - BI cohort rỗng không chia cho 0
+  ---
+  duration_ms: 2.827
+  type: 'test'
+  ...
+# (node:17720) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+# --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./tests/ts-loader.mjs", pathToFileURL("./")); register("./tests/ts-loader.mjs", pathToFileURL("./"));'
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Career: gửi đúng cặp CV–JD từ backend, tính chỉ số và liên kết outline
+ok 19 - Career: gửi đúng cặp CV–JD từ backend, tính chỉ số và liên kết outline
+  ---
+  duration_ms: 30.5207
+  type: 'test'
+  ...
+# Subtest: Career: đầu vào thiếu hoặc vượt giới hạn bị chặn trước khi gọi Google
+ok 20 - Career: đầu vào thiếu hoặc vượt giới hạn bị chặn trước khi gọi Google
+  ---
+  duration_ms: 1.2821
+  type: 'test'
+  ...
+# Subtest: Career: thiếu key hoặc tên model sai không gửi CV–JD
+ok 21 - Career: thiếu key hoặc tên model sai không gửi CV–JD
+  ---
+  duration_ms: 0.52
+  type: 'test'
+  ...
+# Subtest: Career: kỹ năng ngoài danh mục vẫn được phân tích và không đổi mô hình ghép việc
+ok 22 - Career: kỹ năng ngoài danh mục vẫn được phân tích và không đổi mô hình ghép việc
+  ---
+  duration_ms: 1.3882
+  type: 'test'
+  ...
+# Subtest: Career: không tự tạo thêm gap khi chỉ có một gap có căn cứ
+ok 23 - Career: không tự tạo thêm gap khi chỉ có một gap có căn cứ
+  ---
+  duration_ms: 2.4009
+  type: 'test'
+  ...
+# Subtest: Career: không có gap thì chỉ báo bằng chứng, không kết luận đủ checklist
+ok 24 - Career: không có gap thì chỉ báo bằng chứng, không kết luận đủ checklist
+  ---
+  duration_ms: 1.0678
+  type: 'test'
+  ...
+# Subtest: Career: từ chối bằng chứng JD hoặc CV bịa
+ok 25 - Career: từ chối bằng chứng JD hoặc CV bịa
+  ---
+  duration_ms: 1.6069
+  type: 'test'
+  ...
+# Subtest: Career: có bằng chứng hoặc cần phát triển phải có trích dẫn CV
+ok 26 - Career: có bằng chứng hoặc cần phát triển phải có trích dẫn CV
+  ---
+  duration_ms: 2.4835
+  type: 'test'
+  ...
+# Subtest: Career: không đếm yêu cầu trùng để đủ ba gaps
+ok 27 - Career: không đếm yêu cầu trùng để đủ ba gaps
+  ---
+  duration_ms: 2.3957
+  type: 'test'
+  ...
+# Subtest: Career: outline phải tham chiếu yêu cầu thật và liên kết đủ mọi gap
+ok 28 - Career: outline phải tham chiếu yêu cầu thật và liên kết đủ mọi gap
+  ---
+  duration_ms: 2.2216
+  type: 'test'
+  ...
+# Subtest: Career: từ chối phản hồi sai cấu trúc hoặc bị cắt
+ok 29 - Career: từ chối phản hồi sai cấu trúc hoặc bị cắt
+  ---
+  duration_ms: 1.3028
+  type: 'test'
+  ...
+# Subtest: Career: quota quyền model mạng timeout đều trả lỗi an toàn
+ok 30 - Career: quota quyền model mạng timeout đều trả lỗi an toàn
+  ---
+  duration_ms: 1.0628
+  type: 'test'
+  ...
+# Subtest: Career API: kiểm tra Origin JSON và cấu hình trước khi gọi Gemini
+ok 31 - Career API: kiểm tra Origin JSON và cấu hình trước khi gọi Gemini
+  ---
+  duration_ms: 2.9571
+  type: 'test'
+  ...
+# Subtest: Career API: trả phân tích qua endpoint mới, không lộ key
+ok 32 - Career API: trả phân tích qua endpoint mới, không lộ key
+  ---
+  duration_ms: 2.1116
+  type: 'test'
+  ...
+# Subtest: Career: bản xuất có đối chiếu outline khung video và không đánh dấu đã nộp
+ok 33 - Career: bản xuất có đối chiếu outline khung video và không đánh dấu đã nộp
+  ---
+  duration_ms: 1.8538
+  type: 'test'
+  ...
+# (node:18064) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+# --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./tests/ts-loader.mjs", pathToFileURL("./")); register("./tests/ts-loader.mjs", pathToFileURL("./"));'
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: CV rỗng bị từ chối
+ok 34 - CV rỗng bị từ chối
+  ---
+  duration_ms: 1.808
+  type: 'test'
+  ...
+# Subtest: CV quá dài bị từ chối
+ok 35 - CV quá dài bị từ chối
+  ---
+  duration_ms: 0.2902
+  type: 'test'
+  ...
+# Subtest: Không gộp JavaScript vào Java
+ok 36 - Không gộp JavaScript vào Java
+  ---
+  duration_ms: 1.9502
+  type: 'test'
+  ...
+# Subtest: Java vẫn được nhận diện độc lập
+ok 37 - Java vẫn được nhận diện độc lập
+  ---
+  duration_ms: 1.0761
+  type: 'test'
+  ...
+# Subtest: Alias JS và ReactJS được chuẩn hóa
+ok 38 - Alias JS và ReactJS được chuẩn hóa
+  ---
+  duration_ms: 0.3964
+  type: 'test'
+  ...
+# Subtest: Không nhận Python trong câu chưa biết Python
+ok 39 - Không nhận Python trong câu chưa biết Python
+  ---
+  duration_ms: 0.4018
+  type: 'test'
+  ...
+# Subtest: Vẫn nhận kỹ năng khi có bằng chứng dương khác
+ok 40 - Vẫn nhận kỹ năng khi có bằng chứng dương khác
+  ---
+  duration_ms: 0.3199
+  type: 'test'
+  ...
+# Subtest: Trả bằng chứng và yêu cầu xác nhận
+ok 41 - Trả bằng chứng và yêu cầu xác nhận
+  ---
+  duration_ms: 0.4069
+  type: 'test'
+  ...
+# Subtest: TF-IDF chỉ fit 12 JD train
+ok 42 - TF-IDF chỉ fit 12 JD train
+  ---
+  duration_ms: 0.2105
+  type: 'test'
+  ...
+# Subtest: Từ ngoài từ vựng không thêm vào mô hình
+ok 43 - Từ ngoài từ vựng không thêm vào mô hình
+  ---
+  duration_ms: 1.1764
+  type: 'test'
+  ...
+# Subtest: Cosine vector rỗng bằng 0
+ok 44 - Cosine vector rỗng bằng 0
+  ---
+  duration_ms: 0.2435
+  type: 'test'
+  ...
+# Subtest: Cosine tự so sánh bằng 1
+ok 45 - Cosine tự so sánh bằng 1
+  ---
+  duration_ms: 0.6558
+  type: 'test'
+  ...
+# Subtest: Điểm luôn nằm trong 0 đến 100
+ok 46 - Điểm luôn nằm trong 0 đến 100
+  ---
+  duration_ms: 94.2801
+  type: 'test'
+  ...
+# Subtest: Chưa xác nhận không có tổng điểm
+ok 47 - Chưa xác nhận không có tổng điểm
+  ---
+  duration_ms: 0.6715
+  type: 'test'
+  ...
+# Subtest: Thiếu lịch không tự giả định là khớp
+ok 48 - Thiếu lịch không tự giả định là khớp
+  ---
+  duration_ms: 0.8845
+  type: 'test'
+  ...
+# Subtest: Trùng lịch bị loại dù kỹ năng khớp
+ok 49 - Trùng lịch bị loại dù kỹ năng khớp
+  ---
+  duration_ms: 0.4205
+  type: 'test'
+  ...
+# Subtest: Tin đóng bị loại
+ok 50 - Tin đóng bị loại
+  ---
+  duration_ms: 0.4238
+  type: 'test'
+  ...
+# Subtest: Tin hết hạn bị loại
+ok 51 - Tin hết hạn bị loại
+  ---
+  duration_ms: 0.3701
+  type: 'test'
+  ...
+# Subtest: Remote không trừ điểm vì khác thành phố
+ok 52 - Remote không trừ điểm vì khác thành phố
+  ---
+  duration_ms: 0.446
+  type: 'test'
+  ...
+# Subtest: Tổng điểm khớp tổng các thành phần
+ok 53 - Tổng điểm khớp tổng các thành phần
+  ---
+  duration_ms: 0.6064
+  type: 'test'
+  ...
+# Subtest: Giới tính và tuổi không ảnh hưởng điểm
+ok 54 - Giới tính và tuổi không ảnh hưởng điểm
+  ---
+  duration_ms: 1.0491
+  type: 'test'
+  ...
+# Subtest: Hạng cao nhất cùng nhóm nghề của hồ sơ
+ok 55 - Hạng cao nhất cùng nhóm nghề của hồ sơ
+  ---
+  duration_ms: 88.2102
+  type: 'test'
+  ...
+# Subtest: Funnel đơn từng đi qua và giảm dần
+ok 56 - Funnel đơn từng đi qua và giảm dần
+  ---
+  duration_ms: 3.2323
+  type: 'test'
+  ...
+# Subtest: BI không cộng trùng ứng viên
+ok 57 - BI không cộng trùng ứng viên
+  ---
+  duration_ms: 0.5122
+  type: 'test'
+  ...
+# Subtest: Cohort rỗng trả tỷ lệ null
+ok 58 - Cohort rỗng trả tỷ lệ null
+  ---
+  duration_ms: 0.3175
+  type: 'test'
+  ...
+# Subtest: Không trộn lương USD hoặc theo giờ
+ok 59 - Không trộn lương USD hoặc theo giờ
+  ---
+  duration_ms: 2.0783
+  type: 'test'
+  ...
+# Subtest: Lọc BI theo thành phố và cohort ngày gửi
+ok 60 - Lọc BI theo thành phố và cohort ngày gửi
+  ---
+  duration_ms: 0.5315
+  type: 'test'
+  ...
+# Subtest: Không cho chuyển trực tiếp từ gửi đơn sang tuyển
+ok 61 - Không cho chuyển trực tiếp từ gửi đơn sang tuyển
+  ---
+  duration_ms: 0.1305
+  type: 'test'
+  ...
+# Subtest: Khóa ngoại từ chối đơn không có ứng viên
+ok 62 - Khóa ngoại từ chối đơn không có ứng viên
+  ---
+  duration_ms: 1.73
+  type: 'test'
+  ...
+# Subtest: UNIQUE ngăn ứng tuyển trùng
+ok 63 - UNIQUE ngăn ứng tuyển trùng
+  ---
+  duration_ms: 1.1935
+  type: 'test'
+  ...
+# Subtest: Sửa CV không làm đổi snapshot đơn cũ
+ok 64 - Sửa CV không làm đổi snapshot đơn cũ
+  ---
+  duration_ms: 2.4664
+  type: 'test'
+  ...
+# Subtest: Giao dịch lỗi hoàn tác cả đơn và sự kiện
+ok 65 - Giao dịch lỗi hoàn tác cả đơn và sự kiện
+  ---
+  duration_ms: 1.2616
+  type: 'test'
+  ...
+# (node:15656) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+# --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./tests/ts-loader.mjs", pathToFileURL("./")); register("./tests/ts-loader.mjs", pathToFileURL("./"));'
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Chưa có key: báo cấu hình, không gửi CV ra ngoài
+ok 66 - Chưa có key: báo cấu hình, không gửi CV ra ngoài
+  ---
+  duration_ms: 3.5376
+  type: 'test'
+  ...
+# Subtest: CV không hợp lệ bị từ chối trước khi gọi Gemini
+ok 67 - CV không hợp lệ bị từ chối trước khi gọi Gemini
+  ---
+  duration_ms: 0.2202
+  type: 'test'
+  ...
+# Subtest: Gọi Gemini từ backend với header key và schema; giữ bước xác nhận
+ok 68 - Gọi Gemini từ backend với header key và schema; giữ bước xác nhận
+  ---
+  duration_ms: 27.527
+  type: 'test'
+  ...
+# Subtest: Loại kỹ năng có bằng chứng bịa, loại trùng và không đưa kỹ năng mới vào điểm ghép việc
+ok 69 - Loại kỹ năng có bằng chứng bịa, loại trùng và không đưa kỹ năng mới vào điểm ghép việc
+  ---
+  duration_ms: 1.7217
+  type: 'test'
+  ...
+# Subtest: Không chấp nhận cấu trúc sai, kỹ năng ngoài danh mục hoặc kết quả bị cắt
+ok 70 - Không chấp nhận cấu trúc sai, kỹ năng ngoài danh mục hoặc kết quả bị cắt
+  ---
+  duration_ms: 3.2594
+  type: 'test'
+  ...
+# Subtest: Lỗi quota, quyền, model và dịch vụ có thông báo riêng; không lộ lỗi gốc
+ok 71 - Lỗi quota, quyền, model và dịch vụ có thông báo riêng; không lộ lỗi gốc
+  ---
+  duration_ms: 4.3781
+  type: 'test'
+  ...
+# Subtest: Lỗi mạng và hết thời gian không lộ thông tin request
+ok 72 - Lỗi mạng và hết thời gian không lộ thông tin request
+  ---
+  duration_ms: 1.3948
+  type: 'test'
+  ...
+# Subtest: Model tùy chọn bị giới hạn ở tên model, không cho thay host hoặc đường dẫn
+ok 73 - Model tùy chọn bị giới hạn ở tên model, không cho thay host hoặc đường dẫn
+  ---
+  duration_ms: 0.4763
+  type: 'test'
+  ...
+# Subtest: API config chỉ trả trạng thái, API chọn Gemini và từ điển tách biệt
+ok 74 - API config chỉ trả trạng thái, API chọn Gemini và từ điển tách biệt
+  ---
+  duration_ms: 6.5948
+  type: 'test'
+  ...
+# Subtest: API Gemini thiếu key trả 503 và không tự chuyển sang từ điển
+ok 75 - API Gemini thiếu key trả 503 và không tự chuyển sang từ điển
+  ---
+  duration_ms: 1.5268
+  type: 'test'
+  ...
+# Subtest: Ảnh gửi bằng inlineData; trả văn bản OCR và kỹ năng để xác nhận
+ok 76 - Ảnh gửi bằng inlineData; trả văn bản OCR và kỹ năng để xác nhận
+  ---
+  duration_ms: 1.4917
+  type: 'test'
+  ...
+# Subtest: Ảnh rỗng, quá lớn, sai loại và giả MIME bị chặn trước khi gọi Gemini
+ok 77 - Ảnh rỗng, quá lớn, sai loại và giả MIME bị chặn trước khi gọi Gemini
+  ---
+  duration_ms: 0.5243
+  type: 'test'
+  ...
+# Subtest: Nhận JPEG và WEBP có chữ ký khớp MIME
+ok 78 - Nhận JPEG và WEBP có chữ ký khớp MIME
+  ---
+  duration_ms: 1.2923
+  type: 'test'
+  ...
+# Subtest: Ảnh mờ, không phải CV hoặc quá ít chữ trả 422; OCR không đúng cấu trúc trả 502
+ok 79 - Ảnh mờ, không phải CV hoặc quá ít chữ trả 422; OCR không đúng cấu trúc trả 502
+  ---
+  duration_ms: 2.9833
+  type: 'test'
+  ...
+# Subtest: Bằng chứng kỹ năng từ ảnh phải xuất hiện trong văn bản OCR
+ok 80 - Bằng chứng kỹ năng từ ảnh phải xuất hiện trong văn bản OCR
+  ---
+  duration_ms: 0.4311
+  type: 'test'
+  ...
+# Subtest: Đọc multipart đúng một ảnh; từ chối thiếu file, nhiều file, thêm trường và boundary lỗi
+ok 81 - Đọc multipart đúng một ảnh; từ chối thiếu file, nhiều file, thêm trường và boundary lỗi
+  ---
+  duration_ms: 15.584
+  type: 'test'
+  ...
+# Subtest: Giới hạn dung lượng ảnh và request thực tế, kể cả khi không có Content-Length
+ok 82 - Giới hạn dung lượng ảnh và request thực tế, kể cả khi không có Content-Length
+  ---
+  duration_ms: 20.1121
+  type: 'test'
+  ...
+# Subtest: API ảnh kiểm tra Origin và Content-Type, lỗi không ghi đè nội dung CV
+ok 83 - API ảnh kiểm tra Origin và Content-Type, lỗi không ghi đè nội dung CV
+  ---
+  duration_ms: 2.295
+  type: 'test'
+  ...
+# Subtest: API ảnh hoạt động qua multipart và không trả API key hoặc dữ liệu ảnh
+ok 84 - API ảnh hoạt động qua multipart và không trả API key hoặc dữ liệu ảnh
+  ---
+  duration_ms: 6.3092
+  type: 'test'
+  ...
+1..84
+# tests 84
+# suites 0
+# pass 84
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 836.0425

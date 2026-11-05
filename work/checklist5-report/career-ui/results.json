@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-05T17:12:14.234Z",
+  "environment": "Headless Microsoft Edge (Chromium), local production build; Google replies mocked; synthetic CV/JD",
+  "checks": [
+    {
+      "name": "Form ban đầu rỗng, phân tích bị chặn khi thiếu CV/JD",
+      "status": "pass"
+    },
+    {
+      "name": "Đối chiếu đúng cặp CV–JD; hiển thị ba gap và tỷ lệ bằng chứng 25%",
+      "status": "pass"
+    },
+    {
+      "name": "Bộ lọc phân biệt yêu cầu có bằng chứng với các khoảng trống",
+      "status": "pass"
+    },
+    {
+      "name": "Xuất Markdown cần cả hai xác nhận; tệp có đối chiếu, outline và khung video",
+      "status": "pass"
+    },
+    {
+      "name": "Chuyển tab giữ nội dung và kết quả tư vấn",
+      "status": "pass"
+    },
+    {
+      "name": "Sửa JD xóa kết quả và xác nhận cũ",
+      "status": "pass"
+    },
+    {
+      "name": "Lỗi quota giữ dữ liệu nhập và không hiện kết quả giả",
+      "status": "pass"
+    },
+    {
+      "name": "Ít hơn ba gap hiển thị cảnh báo, không tự đánh dấu đủ checklist",
+      "status": "pass"
+    },
+    {
+      "name": "Viewport 390px không tràn ngang ở form và kết quả",
+      "status": "pass"
+    },
+    {
+      "name": "Không có lỗi JavaScript trong các luồng đã thử",
+      "status": "pass"
+    }
+  ],
+  "pageErrors": []
+}

@@ -1,0 +1,11 @@
+{
+  "environment": "Managed preview, trình duyệt Chrome, dữ liệu local tách production",
+  "results": [
+    {"name":"Dashboard hiển thị dữ liệu thật từ API và biểu đồ lương", "status":"pass", "evidence":"12 ứng viên, 16 tin, 40 đơn, tỷ lệ tuyển 15% ở dữ liệu seed"},
+    {"name":"Đọc CV bỏ trạng thái đã xác nhận và hiện bằng chứng", "status":"pass"},
+    {"name":"Xác nhận và lưu hồ sơ làm xuất hiện danh sách gợi ý", "status":"pass"},
+    {"name":"Gửi đơn đổi nút thành Đã ứng tuyển", "status":"pass"},
+    {"name":"Chi tiết giải thích thành phần điểm", "status":"pass", "evidence":"50 + 27.9 + 10 + 10 = 97.9 cho C01 và J04"}
+  ],
+  "not_tested": ["Responsive trên thiết bị di động thật", "Tải đồng thời nhiều người", "Đa trình duyệt", "Dữ liệu tuyển dụng thật"]
+}

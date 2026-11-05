@@ -1,0 +1,2467 @@
+{
+  "version": "synthetic-v1",
+  "reference_date": "2026-10-29",
+  "jobs": [
+    {
+      "id": "J01",
+      "employer_id": "E01",
+      "title": "Frontend Intern",
+      "company": "Mây Digital",
+      "role": "frontend",
+      "description": "Phát triển giao diện web responsive, xây dựng component và tích hợp REST API. Yêu cầu HTML, CSS, JavaScript, React. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React"
+      ],
+      "essential": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "city": "Hà Nội",
+      "mode": "Hybrid",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 3000000,
+      "salary_max": 5000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-05",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J02",
+      "employer_id": "E02",
+      "title": "Frontend Intern · Part-time",
+      "company": "Hạt Giống Tech",
+      "role": "frontend",
+      "description": "Phát triển giao diện web responsive, xây dựng component và tích hợp REST API. Yêu cầu HTML, CSS, JavaScript. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "essential": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "city": "Hà Nội",
+      "mode": "Remote",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 4000000,
+      "salary_max": 6000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-06",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J03",
+      "employer_id": "E03",
+      "title": "Frontend Intern · Junior",
+      "company": "Bến Thành Labs",
+      "role": "frontend",
+      "description": "Phát triển giao diện web responsive, xây dựng component và tích hợp REST API. Yêu cầu HTML, CSS, JavaScript, React. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React"
+      ],
+      "essential": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "city": "TP Hồ Chí Minh",
+      "mode": "Onsite",
+      "days": [
+        3,
+        5
+      ],
+      "salary_min": 5000000,
+      "salary_max": 7000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-07",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J04",
+      "employer_id": "E04",
+      "title": "Frontend Intern · Remote",
+      "company": "Sông Hàn Studio",
+      "role": "frontend",
+      "description": "Phát triển giao diện web responsive, xây dựng component và tích hợp REST API. Yêu cầu HTML, CSS, JavaScript, React. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React"
+      ],
+      "essential": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "city": "Đà Nẵng",
+      "mode": "Remote",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 6000000,
+      "salary_max": 8000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-08",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "test"
+    },
+    {
+      "id": "J05",
+      "employer_id": "E01",
+      "title": "Data Analyst Intern",
+      "company": "Mây Digital",
+      "role": "data",
+      "description": "Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard. Yêu cầu Python, SQL, Excel, Power BI. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "Python",
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "essential": [
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "city": "Hà Nội",
+      "mode": "Hybrid",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 4000000,
+      "salary_max": 6000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-08",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J06",
+      "employer_id": "E02",
+      "title": "Data Analyst Intern · Part-time",
+      "company": "Hạt Giống Tech",
+      "role": "data",
+      "description": "Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard. Yêu cầu Python, SQL, Excel. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "Python",
+        "SQL",
+        "Excel"
+      ],
+      "essential": [
+        "SQL",
+        "Excel"
+      ],
+      "city": "Hà Nội",
+      "mode": "Remote",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 5000000,
+      "salary_max": 7000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-09",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J07",
+      "employer_id": "E03",
+      "title": "Data Analyst Intern · Junior",
+      "company": "Bến Thành Labs",
+      "role": "data",
+      "description": "Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard. Yêu cầu Python, SQL, Excel, Power BI. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "Python",
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "essential": [
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "city": "TP Hồ Chí Minh",
+      "mode": "Onsite",
+      "days": [
+        3,
+        5
+      ],
+      "salary_min": 6000000,
+      "salary_max": 8000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-10",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J08",
+      "employer_id": "E04",
+      "title": "Data Analyst Intern · Remote",
+      "company": "Sông Hàn Studio",
+      "role": "data",
+      "description": "Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard. Yêu cầu Python, SQL, Excel, Power BI. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "Python",
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "essential": [
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "city": "Đà Nẵng",
+      "mode": "Remote",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 7000000,
+      "salary_max": 9000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-11",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "test"
+    },
+    {
+      "id": "J09",
+      "employer_id": "E01",
+      "title": "Backend Intern",
+      "company": "Mây Digital",
+      "role": "backend",
+      "description": "Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend. Yêu cầu Java, SQL, Spring Boot, Git. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "Java",
+        "SQL",
+        "Spring Boot",
+        "Git"
+      ],
+      "essential": [
+        "Java",
+        "SQL",
+        "Git"
+      ],
+      "city": "Hà Nội",
+      "mode": "Hybrid",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 5000000,
+      "salary_max": 7000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-11",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J10",
+      "employer_id": "E02",
+      "title": "Backend Intern · Part-time",
+      "company": "Hạt Giống Tech",
+      "role": "backend",
+      "description": "Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend. Yêu cầu Java, SQL, Spring Boot. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "Java",
+        "SQL",
+        "Spring Boot"
+      ],
+      "essential": [
+        "Java",
+        "SQL"
+      ],
+      "city": "Hà Nội",
+      "mode": "Remote",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 6000000,
+      "salary_max": 8000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-12",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J11",
+      "employer_id": "E03",
+      "title": "Backend Intern · Junior",
+      "company": "Bến Thành Labs",
+      "role": "backend",
+      "description": "Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend. Yêu cầu Java, SQL, Spring Boot, Git. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "Java",
+        "SQL",
+        "Spring Boot",
+        "Git"
+      ],
+      "essential": [
+        "Java",
+        "SQL",
+        "Git"
+      ],
+      "city": "TP Hồ Chí Minh",
+      "mode": "Onsite",
+      "days": [
+        3,
+        5
+      ],
+      "salary_min": 7000000,
+      "salary_max": 9000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-13",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J12",
+      "employer_id": "E04",
+      "title": "Backend Intern · Remote",
+      "company": "Sông Hàn Studio",
+      "role": "backend",
+      "description": "Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend. Yêu cầu Java, SQL, Spring Boot, Git. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "Java",
+        "SQL",
+        "Spring Boot",
+        "Git"
+      ],
+      "essential": [
+        "Java",
+        "SQL",
+        "Git"
+      ],
+      "city": "Đà Nẵng",
+      "mode": "Remote",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 8000000,
+      "salary_max": 10000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-14",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "test"
+    },
+    {
+      "id": "J13",
+      "employer_id": "E01",
+      "title": "Content Marketing Intern",
+      "company": "Mây Digital",
+      "role": "content",
+      "description": "Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing. Yêu cầu SEO, Content Writing, Canva, Google Analytics. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "SEO",
+        "Content Writing",
+        "Canva",
+        "Google Analytics"
+      ],
+      "essential": [
+        "SEO",
+        "Content Writing",
+        "Canva"
+      ],
+      "city": "Hà Nội",
+      "mode": "Hybrid",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 6000000,
+      "salary_max": 8000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-14",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J14",
+      "employer_id": "E02",
+      "title": "Content Marketing Intern · Part-time",
+      "company": "Hạt Giống Tech",
+      "role": "content",
+      "description": "Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing. Yêu cầu SEO, Content Writing, Canva. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "SEO",
+        "Content Writing",
+        "Canva"
+      ],
+      "essential": [
+        "SEO",
+        "Content Writing",
+        "Canva"
+      ],
+      "city": "Hà Nội",
+      "mode": "Remote",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 7000000,
+      "salary_max": 9000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-15",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J15",
+      "employer_id": "E03",
+      "title": "Content Marketing Intern · Junior",
+      "company": "Bến Thành Labs",
+      "role": "content",
+      "description": "Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing. Yêu cầu SEO, Content Writing, Canva, Google Analytics. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "SEO",
+        "Content Writing",
+        "Canva",
+        "Google Analytics"
+      ],
+      "essential": [
+        "SEO",
+        "Content Writing",
+        "Canva"
+      ],
+      "city": "TP Hồ Chí Minh",
+      "mode": "Onsite",
+      "days": [
+        3,
+        5
+      ],
+      "salary_min": 8000000,
+      "salary_max": 10000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-16",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "train"
+    },
+    {
+      "id": "J16",
+      "employer_id": "E04",
+      "title": "Content Marketing Intern · Remote",
+      "company": "Sông Hàn Studio",
+      "role": "content",
+      "description": "Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing. Yêu cầu SEO, Content Writing, Canva, Google Analytics. Chấp nhận sinh viên và dự án học tập.",
+      "skills": [
+        "SEO",
+        "Content Writing",
+        "Canva",
+        "Google Analytics"
+      ],
+      "essential": [
+        "SEO",
+        "Content Writing",
+        "Canva"
+      ],
+      "city": "Đà Nẵng",
+      "mode": "Remote",
+      "days": [
+        2,
+        4
+      ],
+      "salary_min": 9000000,
+      "salary_max": 11000000,
+      "currency": "VND",
+      "salary_period": "month",
+      "published_at": "2026-10-17",
+      "deadline": "2026-12-31",
+      "status": "open",
+      "split": "test"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "C01",
+      "name": "Nguyễn Minh Anh",
+      "role": "frontend",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React"
+      ],
+      "text": "Nguyễn Minh Anh\nSinh viên năm 3. Định hướng Frontend Intern.\nKỹ năng: HTML, CSS, JavaScript, React.\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "Hà Nội",
+      "mode": "Any",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "validation"
+    },
+    {
+      "id": "C02",
+      "name": "Trần Gia Bảo",
+      "role": "frontend",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "text": "Trần Gia Bảo\nSinh viên năm 3. Định hướng Frontend Intern.\nKỹ năng: HTML, CSS, JavaScript.\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "Hà Nội",
+      "mode": "Remote",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "test"
+    },
+    {
+      "id": "C03",
+      "name": "Lê Hoàng Nam",
+      "role": "frontend",
+      "skills": [
+        "React",
+        "JavaScript",
+        "Git"
+      ],
+      "text": "Lê Hoàng Nam\nSinh viên năm 3. Định hướng Frontend Intern.\nKỹ năng: React, JavaScript, Git.\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "TP Hồ Chí Minh",
+      "mode": "Any",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "test"
+    },
+    {
+      "id": "C04",
+      "name": "Phạm Thu Hà",
+      "role": "data",
+      "skills": [
+        "Python",
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "text": "Phạm Thu Hà\nSinh viên năm 3. Định hướng Data Analyst Intern.\nKỹ năng: Python, SQL, Excel, Power BI.\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "Hà Nội",
+      "mode": "Any",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "validation"
+    },
+    {
+      "id": "C05",
+      "name": "Đỗ Đức Minh",
+      "role": "data",
+      "skills": [
+        "SQL",
+        "Excel",
+        "Power BI"
+      ],
+      "text": "Đỗ Đức Minh\nSinh viên năm 3. Định hướng Data Analyst Intern.\nKỹ năng: SQL, Excel, Power BI.\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "Hà Nội",
+      "mode": "Remote",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "test"
+    },
+    {
+      "id": "C06",
+      "name": "Vũ Ngọc Linh",
+      "role": "data",
+      "skills": [
+        "Python",
+        "SQL",
+        "Git"
+      ],
+      "text": "Vũ Ngọc Linh\nSinh viên năm 3. Định hướng Data Analyst Intern.\nKỹ năng: Python, SQL, Git.\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "TP Hồ Chí Minh",
+      "mode": "Any",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "test"
+    },
+    {
+      "id": "C07",
+      "name": "Bùi Tuấn Kiệt",
+      "role": "backend",
+      "skills": [
+        "Java",
+        "SQL",
+        "Spring Boot",
+        "Git"
+      ],
+      "text": "Bùi Tuấn Kiệt\nSinh viên năm 3. Định hướng Backend Intern.\nKỹ năng: Java, SQL, Spring Boot, Git.\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "Hà Nội",
+      "mode": "Any",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "validation"
+    },
+    {
+      "id": "C08",
+      "name": "Ngô Thanh Tâm",
+      "role": "backend",
+      "skills": [
+        "Java",
+        "SQL",
+        "Git"
+      ],
+      "text": "Ngô Thanh Tâm\nSinh viên năm 3. Định hướng Backend Intern.\nKỹ năng: Java, SQL, Git.\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "Hà Nội",
+      "mode": "Remote",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "test"
+    },
+    {
+      "id": "C09",
+      "name": "Đặng Quốc Huy",
+      "role": "backend",
+      "skills": [
+        "Java",
+        "Git"
+      ],
+      "text": "Đặng Quốc Huy\nSinh viên năm 3. Định hướng Backend Intern.\nKỹ năng: Java, Git.\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "TP Hồ Chí Minh",
+      "mode": "Any",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "test"
+    },
+    {
+      "id": "C10",
+      "name": "Hoàng Mai Chi",
+      "role": "content",
+      "skills": [
+        "SEO",
+        "Content Writing",
+        "Canva",
+        "Google Analytics"
+      ],
+      "text": "Hoàng Mai Chi\nSinh viên năm 3. Định hướng Content Marketing Intern.\nKỹ năng: SEO, Content Writing, Canva, Google Analytics.\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "Hà Nội",
+      "mode": "Any",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "validation"
+    },
+    {
+      "id": "C11",
+      "name": "Dương Khánh Vy",
+      "role": "content",
+      "skills": [
+        "SEO",
+        "Content Writing",
+        "Canva"
+      ],
+      "text": "Dương Khánh Vy\nSinh viên năm 3. Định hướng Content Marketing Intern.\nKỹ năng: SEO, Content Writing, Canva.\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "Hà Nội",
+      "mode": "Remote",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "test"
+    },
+    {
+      "id": "C12",
+      "name": "Phan Hải Yến",
+      "role": "content",
+      "skills": [
+        "Content Writing",
+        "Canva"
+      ],
+      "text": "Phan Hải Yến\nSinh viên năm 3. Định hướng Content Marketing Intern.\nKỹ năng: Content Writing, Canva.\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.",
+      "city": "TP Hồ Chí Minh",
+      "mode": "Any",
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "confirmed": true,
+      "split": "test"
+    }
+  ],
+  "labels": {
+    "C01": {
+      "J01": 3,
+      "J02": 2,
+      "J03": 1,
+      "J04": 2
+    },
+    "C02": {
+      "J01": 2,
+      "J02": 3,
+      "J03": 1,
+      "J04": 2
+    },
+    "C03": {
+      "J01": 1,
+      "J02": 2,
+      "J03": 3,
+      "J04": 2
+    },
+    "C04": {
+      "J05": 3,
+      "J06": 2,
+      "J07": 1,
+      "J08": 2
+    },
+    "C05": {
+      "J05": 2,
+      "J06": 3,
+      "J07": 1,
+      "J08": 2
+    },
+    "C06": {
+      "J05": 1,
+      "J06": 2,
+      "J07": 3,
+      "J08": 2
+    },
+    "C07": {
+      "J09": 3,
+      "J10": 2,
+      "J11": 1,
+      "J12": 2
+    },
+    "C08": {
+      "J09": 2,
+      "J10": 3,
+      "J11": 1,
+      "J12": 2
+    },
+    "C09": {
+      "J09": 1,
+      "J10": 2,
+      "J11": 3,
+      "J12": 2
+    },
+    "C10": {
+      "J13": 3,
+      "J14": 2,
+      "J15": 1,
+      "J16": 2
+    },
+    "C11": {
+      "J13": 2,
+      "J14": 3,
+      "J15": 1,
+      "J16": 2
+    },
+    "C12": {
+      "J13": 1,
+      "J14": 2,
+      "J15": 3,
+      "J16": 2
+    }
+  },
+  "applications": [
+    {
+      "id": "A001",
+      "candidate_id": "C01",
+      "job_id": "J01",
+      "status": "submitted",
+      "created_at": "2026-10-03T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C01\", \"name\": \"Nguyễn Minh Anh\", \"role\": \"frontend\", \"skills\": [\"HTML\", \"CSS\", \"JavaScript\", \"React\"], \"text\": \"Nguyễn Minh Anh\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: HTML, CSS, JavaScript, React.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A002",
+      "candidate_id": "C02",
+      "job_id": "J01",
+      "status": "screened",
+      "created_at": "2026-10-04T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C02\", \"name\": \"Trần Gia Bảo\", \"role\": \"frontend\", \"skills\": [\"HTML\", \"CSS\", \"JavaScript\"], \"text\": \"Trần Gia Bảo\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: HTML, CSS, JavaScript.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A003",
+      "candidate_id": "C03",
+      "job_id": "J01",
+      "status": "interview",
+      "created_at": "2026-10-05T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C03\", \"name\": \"Lê Hoàng Nam\", \"role\": \"frontend\", \"skills\": [\"React\", \"JavaScript\", \"Git\"], \"text\": \"Lê Hoàng Nam\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: React, JavaScript, Git.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A004",
+      "candidate_id": "C04",
+      "job_id": "J05",
+      "status": "offered",
+      "created_at": "2026-10-06T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C04\", \"name\": \"Phạm Thu Hà\", \"role\": \"data\", \"skills\": [\"Python\", \"SQL\", \"Excel\", \"Power BI\"], \"text\": \"Phạm Thu Hà\\nSinh viên năm 3. Định hướng Data Analyst Intern.\\nKỹ năng: Python, SQL, Excel, Power BI.\\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A005",
+      "candidate_id": "C05",
+      "job_id": "J05",
+      "status": "hired",
+      "created_at": "2026-10-07T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C05\", \"name\": \"Đỗ Đức Minh\", \"role\": \"data\", \"skills\": [\"SQL\", \"Excel\", \"Power BI\"], \"text\": \"Đỗ Đức Minh\\nSinh viên năm 3. Định hướng Data Analyst Intern.\\nKỹ năng: SQL, Excel, Power BI.\\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A006",
+      "candidate_id": "C06",
+      "job_id": "J05",
+      "status": "rejected",
+      "created_at": "2026-10-08T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C06\", \"name\": \"Vũ Ngọc Linh\", \"role\": \"data\", \"skills\": [\"Python\", \"SQL\", \"Git\"], \"text\": \"Vũ Ngọc Linh\\nSinh viên năm 3. Định hướng Data Analyst Intern.\\nKỹ năng: Python, SQL, Git.\\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A007",
+      "candidate_id": "C07",
+      "job_id": "J09",
+      "status": "submitted",
+      "created_at": "2026-10-09T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C07\", \"name\": \"Bùi Tuấn Kiệt\", \"role\": \"backend\", \"skills\": [\"Java\", \"SQL\", \"Spring Boot\", \"Git\"], \"text\": \"Bùi Tuấn Kiệt\\nSinh viên năm 3. Định hướng Backend Intern.\\nKỹ năng: Java, SQL, Spring Boot, Git.\\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A008",
+      "candidate_id": "C08",
+      "job_id": "J09",
+      "status": "screened",
+      "created_at": "2026-10-10T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C08\", \"name\": \"Ngô Thanh Tâm\", \"role\": \"backend\", \"skills\": [\"Java\", \"SQL\", \"Git\"], \"text\": \"Ngô Thanh Tâm\\nSinh viên năm 3. Định hướng Backend Intern.\\nKỹ năng: Java, SQL, Git.\\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A009",
+      "candidate_id": "C09",
+      "job_id": "J09",
+      "status": "interview",
+      "created_at": "2026-10-11T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C09\", \"name\": \"Đặng Quốc Huy\", \"role\": \"backend\", \"skills\": [\"Java\", \"Git\"], \"text\": \"Đặng Quốc Huy\\nSinh viên năm 3. Định hướng Backend Intern.\\nKỹ năng: Java, Git.\\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A010",
+      "candidate_id": "C10",
+      "job_id": "J13",
+      "status": "offered",
+      "created_at": "2026-10-12T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C10\", \"name\": \"Hoàng Mai Chi\", \"role\": \"content\", \"skills\": [\"SEO\", \"Content Writing\", \"Canva\", \"Google Analytics\"], \"text\": \"Hoàng Mai Chi\\nSinh viên năm 3. Định hướng Content Marketing Intern.\\nKỹ năng: SEO, Content Writing, Canva, Google Analytics.\\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A011",
+      "candidate_id": "C11",
+      "job_id": "J13",
+      "status": "hired",
+      "created_at": "2026-10-13T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C11\", \"name\": \"Dương Khánh Vy\", \"role\": \"content\", \"skills\": [\"SEO\", \"Content Writing\", \"Canva\"], \"text\": \"Dương Khánh Vy\\nSinh viên năm 3. Định hướng Content Marketing Intern.\\nKỹ năng: SEO, Content Writing, Canva.\\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A012",
+      "candidate_id": "C12",
+      "job_id": "J13",
+      "status": "rejected",
+      "created_at": "2026-10-14T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C12\", \"name\": \"Phan Hải Yến\", \"role\": \"content\", \"skills\": [\"Content Writing\", \"Canva\"], \"text\": \"Phan Hải Yến\\nSinh viên năm 3. Định hướng Content Marketing Intern.\\nKỹ năng: Content Writing, Canva.\\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A013",
+      "candidate_id": "C01",
+      "job_id": "J02",
+      "status": "submitted",
+      "created_at": "2026-10-15T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C01\", \"name\": \"Nguyễn Minh Anh\", \"role\": \"frontend\", \"skills\": [\"HTML\", \"CSS\", \"JavaScript\", \"React\"], \"text\": \"Nguyễn Minh Anh\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: HTML, CSS, JavaScript, React.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A014",
+      "candidate_id": "C02",
+      "job_id": "J02",
+      "status": "screened",
+      "created_at": "2026-10-16T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C02\", \"name\": \"Trần Gia Bảo\", \"role\": \"frontend\", \"skills\": [\"HTML\", \"CSS\", \"JavaScript\"], \"text\": \"Trần Gia Bảo\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: HTML, CSS, JavaScript.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A015",
+      "candidate_id": "C03",
+      "job_id": "J02",
+      "status": "interview",
+      "created_at": "2026-10-17T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C03\", \"name\": \"Lê Hoàng Nam\", \"role\": \"frontend\", \"skills\": [\"React\", \"JavaScript\", \"Git\"], \"text\": \"Lê Hoàng Nam\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: React, JavaScript, Git.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A016",
+      "candidate_id": "C04",
+      "job_id": "J06",
+      "status": "offered",
+      "created_at": "2026-10-18T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C04\", \"name\": \"Phạm Thu Hà\", \"role\": \"data\", \"skills\": [\"Python\", \"SQL\", \"Excel\", \"Power BI\"], \"text\": \"Phạm Thu Hà\\nSinh viên năm 3. Định hướng Data Analyst Intern.\\nKỹ năng: Python, SQL, Excel, Power BI.\\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A017",
+      "candidate_id": "C05",
+      "job_id": "J06",
+      "status": "hired",
+      "created_at": "2026-10-19T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C05\", \"name\": \"Đỗ Đức Minh\", \"role\": \"data\", \"skills\": [\"SQL\", \"Excel\", \"Power BI\"], \"text\": \"Đỗ Đức Minh\\nSinh viên năm 3. Định hướng Data Analyst Intern.\\nKỹ năng: SQL, Excel, Power BI.\\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A018",
+      "candidate_id": "C06",
+      "job_id": "J06",
+      "status": "rejected",
+      "created_at": "2026-10-20T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C06\", \"name\": \"Vũ Ngọc Linh\", \"role\": \"data\", \"skills\": [\"Python\", \"SQL\", \"Git\"], \"text\": \"Vũ Ngọc Linh\\nSinh viên năm 3. Định hướng Data Analyst Intern.\\nKỹ năng: Python, SQL, Git.\\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A019",
+      "candidate_id": "C07",
+      "job_id": "J10",
+      "status": "submitted",
+      "created_at": "2026-10-21T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C07\", \"name\": \"Bùi Tuấn Kiệt\", \"role\": \"backend\", \"skills\": [\"Java\", \"SQL\", \"Spring Boot\", \"Git\"], \"text\": \"Bùi Tuấn Kiệt\\nSinh viên năm 3. Định hướng Backend Intern.\\nKỹ năng: Java, SQL, Spring Boot, Git.\\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A020",
+      "candidate_id": "C08",
+      "job_id": "J10",
+      "status": "screened",
+      "created_at": "2026-10-22T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C08\", \"name\": \"Ngô Thanh Tâm\", \"role\": \"backend\", \"skills\": [\"Java\", \"SQL\", \"Git\"], \"text\": \"Ngô Thanh Tâm\\nSinh viên năm 3. Định hướng Backend Intern.\\nKỹ năng: Java, SQL, Git.\\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A021",
+      "candidate_id": "C09",
+      "job_id": "J10",
+      "status": "interview",
+      "created_at": "2026-10-03T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C09\", \"name\": \"Đặng Quốc Huy\", \"role\": \"backend\", \"skills\": [\"Java\", \"Git\"], \"text\": \"Đặng Quốc Huy\\nSinh viên năm 3. Định hướng Backend Intern.\\nKỹ năng: Java, Git.\\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A022",
+      "candidate_id": "C10",
+      "job_id": "J14",
+      "status": "offered",
+      "created_at": "2026-10-04T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C10\", \"name\": \"Hoàng Mai Chi\", \"role\": \"content\", \"skills\": [\"SEO\", \"Content Writing\", \"Canva\", \"Google Analytics\"], \"text\": \"Hoàng Mai Chi\\nSinh viên năm 3. Định hướng Content Marketing Intern.\\nKỹ năng: SEO, Content Writing, Canva, Google Analytics.\\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A023",
+      "candidate_id": "C11",
+      "job_id": "J14",
+      "status": "hired",
+      "created_at": "2026-10-05T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C11\", \"name\": \"Dương Khánh Vy\", \"role\": \"content\", \"skills\": [\"SEO\", \"Content Writing\", \"Canva\"], \"text\": \"Dương Khánh Vy\\nSinh viên năm 3. Định hướng Content Marketing Intern.\\nKỹ năng: SEO, Content Writing, Canva.\\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A024",
+      "candidate_id": "C12",
+      "job_id": "J14",
+      "status": "rejected",
+      "created_at": "2026-10-06T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C12\", \"name\": \"Phan Hải Yến\", \"role\": \"content\", \"skills\": [\"Content Writing\", \"Canva\"], \"text\": \"Phan Hải Yến\\nSinh viên năm 3. Định hướng Content Marketing Intern.\\nKỹ năng: Content Writing, Canva.\\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A025",
+      "candidate_id": "C01",
+      "job_id": "J03",
+      "status": "submitted",
+      "created_at": "2026-10-07T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C01\", \"name\": \"Nguyễn Minh Anh\", \"role\": \"frontend\", \"skills\": [\"HTML\", \"CSS\", \"JavaScript\", \"React\"], \"text\": \"Nguyễn Minh Anh\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: HTML, CSS, JavaScript, React.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A026",
+      "candidate_id": "C02",
+      "job_id": "J03",
+      "status": "screened",
+      "created_at": "2026-10-08T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C02\", \"name\": \"Trần Gia Bảo\", \"role\": \"frontend\", \"skills\": [\"HTML\", \"CSS\", \"JavaScript\"], \"text\": \"Trần Gia Bảo\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: HTML, CSS, JavaScript.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A027",
+      "candidate_id": "C03",
+      "job_id": "J03",
+      "status": "interview",
+      "created_at": "2026-10-09T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C03\", \"name\": \"Lê Hoàng Nam\", \"role\": \"frontend\", \"skills\": [\"React\", \"JavaScript\", \"Git\"], \"text\": \"Lê Hoàng Nam\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: React, JavaScript, Git.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A028",
+      "candidate_id": "C04",
+      "job_id": "J07",
+      "status": "offered",
+      "created_at": "2026-10-10T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C04\", \"name\": \"Phạm Thu Hà\", \"role\": \"data\", \"skills\": [\"Python\", \"SQL\", \"Excel\", \"Power BI\"], \"text\": \"Phạm Thu Hà\\nSinh viên năm 3. Định hướng Data Analyst Intern.\\nKỹ năng: Python, SQL, Excel, Power BI.\\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A029",
+      "candidate_id": "C05",
+      "job_id": "J07",
+      "status": "hired",
+      "created_at": "2026-10-11T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C05\", \"name\": \"Đỗ Đức Minh\", \"role\": \"data\", \"skills\": [\"SQL\", \"Excel\", \"Power BI\"], \"text\": \"Đỗ Đức Minh\\nSinh viên năm 3. Định hướng Data Analyst Intern.\\nKỹ năng: SQL, Excel, Power BI.\\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A030",
+      "candidate_id": "C06",
+      "job_id": "J07",
+      "status": "rejected",
+      "created_at": "2026-10-12T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C06\", \"name\": \"Vũ Ngọc Linh\", \"role\": \"data\", \"skills\": [\"Python\", \"SQL\", \"Git\"], \"text\": \"Vũ Ngọc Linh\\nSinh viên năm 3. Định hướng Data Analyst Intern.\\nKỹ năng: Python, SQL, Git.\\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A031",
+      "candidate_id": "C07",
+      "job_id": "J11",
+      "status": "submitted",
+      "created_at": "2026-10-13T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C07\", \"name\": \"Bùi Tuấn Kiệt\", \"role\": \"backend\", \"skills\": [\"Java\", \"SQL\", \"Spring Boot\", \"Git\"], \"text\": \"Bùi Tuấn Kiệt\\nSinh viên năm 3. Định hướng Backend Intern.\\nKỹ năng: Java, SQL, Spring Boot, Git.\\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A032",
+      "candidate_id": "C08",
+      "job_id": "J11",
+      "status": "screened",
+      "created_at": "2026-10-14T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C08\", \"name\": \"Ngô Thanh Tâm\", \"role\": \"backend\", \"skills\": [\"Java\", \"SQL\", \"Git\"], \"text\": \"Ngô Thanh Tâm\\nSinh viên năm 3. Định hướng Backend Intern.\\nKỹ năng: Java, SQL, Git.\\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A033",
+      "candidate_id": "C09",
+      "job_id": "J11",
+      "status": "interview",
+      "created_at": "2026-10-15T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C09\", \"name\": \"Đặng Quốc Huy\", \"role\": \"backend\", \"skills\": [\"Java\", \"Git\"], \"text\": \"Đặng Quốc Huy\\nSinh viên năm 3. Định hướng Backend Intern.\\nKỹ năng: Java, Git.\\nDự án: Xây dựng API quản lý dữ liệu, thiết kế cơ sở dữ liệu và kiểm thử dịch vụ backend.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A034",
+      "candidate_id": "C10",
+      "job_id": "J15",
+      "status": "offered",
+      "created_at": "2026-10-16T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C10\", \"name\": \"Hoàng Mai Chi\", \"role\": \"content\", \"skills\": [\"SEO\", \"Content Writing\", \"Canva\", \"Google Analytics\"], \"text\": \"Hoàng Mai Chi\\nSinh viên năm 3. Định hướng Content Marketing Intern.\\nKỹ năng: SEO, Content Writing, Canva, Google Analytics.\\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A035",
+      "candidate_id": "C11",
+      "job_id": "J15",
+      "status": "hired",
+      "created_at": "2026-10-17T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C11\", \"name\": \"Dương Khánh Vy\", \"role\": \"content\", \"skills\": [\"SEO\", \"Content Writing\", \"Canva\"], \"text\": \"Dương Khánh Vy\\nSinh viên năm 3. Định hướng Content Marketing Intern.\\nKỹ năng: SEO, Content Writing, Canva.\\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A036",
+      "candidate_id": "C12",
+      "job_id": "J15",
+      "status": "rejected",
+      "created_at": "2026-10-18T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C12\", \"name\": \"Phan Hải Yến\", \"role\": \"content\", \"skills\": [\"Content Writing\", \"Canva\"], \"text\": \"Phan Hải Yến\\nSinh viên năm 3. Định hướng Content Marketing Intern.\\nKỹ năng: Content Writing, Canva.\\nDự án: Nghiên cứu từ khóa, viết nội dung truyền thông và theo dõi hiệu quả chiến dịch marketing.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A037",
+      "candidate_id": "C01",
+      "job_id": "J04",
+      "status": "submitted",
+      "created_at": "2026-10-19T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C01\", \"name\": \"Nguyễn Minh Anh\", \"role\": \"frontend\", \"skills\": [\"HTML\", \"CSS\", \"JavaScript\", \"React\"], \"text\": \"Nguyễn Minh Anh\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: HTML, CSS, JavaScript, React.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    },
+    {
+      "id": "A038",
+      "candidate_id": "C02",
+      "job_id": "J04",
+      "status": "screened",
+      "created_at": "2026-10-20T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C02\", \"name\": \"Trần Gia Bảo\", \"role\": \"frontend\", \"skills\": [\"HTML\", \"CSS\", \"JavaScript\"], \"text\": \"Trần Gia Bảo\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: HTML, CSS, JavaScript.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Remote\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A039",
+      "candidate_id": "C03",
+      "job_id": "J04",
+      "status": "interview",
+      "created_at": "2026-10-21T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C03\", \"name\": \"Lê Hoàng Nam\", \"role\": \"frontend\", \"skills\": [\"React\", \"JavaScript\", \"Git\"], \"text\": \"Lê Hoàng Nam\\nSinh viên năm 3. Định hướng Frontend Intern.\\nKỹ năng: React, JavaScript, Git.\\nDự án: Phát triển giao diện web responsive, xây dựng component và tích hợp REST API.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"TP Hồ Chí Minh\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"test\"}"
+    },
+    {
+      "id": "A040",
+      "candidate_id": "C04",
+      "job_id": "J08",
+      "status": "offered",
+      "created_at": "2026-10-22T09:00:00Z",
+      "profile_snapshot": "{\"id\": \"C04\", \"name\": \"Phạm Thu Hà\", \"role\": \"data\", \"skills\": [\"Python\", \"SQL\", \"Excel\", \"Power BI\"], \"text\": \"Phạm Thu Hà\\nSinh viên năm 3. Định hướng Data Analyst Intern.\\nKỹ năng: Python, SQL, Excel, Power BI.\\nDự án: Phân tích dữ liệu kinh doanh, làm sạch dữ liệu và trực quan hóa báo cáo dashboard.\\nMong muốn thực tập, học hỏi trong nhóm chuyên môn.\", \"city\": \"Hà Nội\", \"mode\": \"Any\", \"days\": [2, 3, 4, 5, 6], \"confirmed\": true, \"split\": \"validation\"}"
+    }
+  ],
+  "events": [
+    {
+      "id": "A001-0",
+      "application_id": "A001",
+      "status": "submitted",
+      "occurred_at": "2026-10-03T10:00:00Z"
+    },
+    {
+      "id": "A002-0",
+      "application_id": "A002",
+      "status": "submitted",
+      "occurred_at": "2026-10-04T10:00:00Z"
+    },
+    {
+      "id": "A002-1",
+      "application_id": "A002",
+      "status": "screened",
+      "occurred_at": "2026-10-05T10:00:00Z"
+    },
+    {
+      "id": "A003-0",
+      "application_id": "A003",
+      "status": "submitted",
+      "occurred_at": "2026-10-05T10:00:00Z"
+    },
+    {
+      "id": "A003-1",
+      "application_id": "A003",
+      "status": "screened",
+      "occurred_at": "2026-10-06T10:00:00Z"
+    },
+    {
+      "id": "A003-2",
+      "application_id": "A003",
+      "status": "interview",
+      "occurred_at": "2026-10-07T10:00:00Z"
+    },
+    {
+      "id": "A004-0",
+      "application_id": "A004",
+      "status": "submitted",
+      "occurred_at": "2026-10-06T10:00:00Z"
+    },
+    {
+      "id": "A004-1",
+      "application_id": "A004",
+      "status": "screened",
+      "occurred_at": "2026-10-07T10:00:00Z"
+    },
+    {
+      "id": "A004-2",
+      "application_id": "A004",
+      "status": "interview",
+      "occurred_at": "2026-10-08T10:00:00Z"
+    },
+    {
+      "id": "A004-3",
+      "application_id": "A004",
+      "status": "offered",
+      "occurred_at": "2026-10-09T10:00:00Z"
+    },
+    {
+      "id": "A005-0",
+      "application_id": "A005",
+      "status": "submitted",
+      "occurred_at": "2026-10-07T10:00:00Z"
+    },
+    {
+      "id": "A005-1",
+      "application_id": "A005",
+      "status": "screened",
+      "occurred_at": "2026-10-08T10:00:00Z"
+    },
+    {
+      "id": "A005-2",
+      "application_id": "A005",
+      "status": "interview",
+      "occurred_at": "2026-10-09T10:00:00Z"
+    },
+    {
+      "id": "A005-3",
+      "application_id": "A005",
+      "status": "offered",
+      "occurred_at": "2026-10-10T10:00:00Z"
+    },
+    {
+      "id": "A005-4",
+      "application_id": "A005",
+      "status": "hired",
+      "occurred_at": "2026-10-11T10:00:00Z"
+    },
+    {
+      "id": "A006-0",
+      "application_id": "A006",
+      "status": "submitted",
+      "occurred_at": "2026-10-08T10:00:00Z"
+    },
+    {
+      "id": "A006-1",
+      "application_id": "A006",
+      "status": "screened",
+      "occurred_at": "2026-10-09T10:00:00Z"
+    },
+    {
+      "id": "A006-2",
+      "application_id": "A006",
+      "status": "rejected",
+      "occurred_at": "2026-10-10T10:00:00Z"
+    },
+    {
+      "id": "A007-0",
+      "application_id": "A007",
+      "status": "submitted",
+      "occurred_at": "2026-10-09T10:00:00Z"
+    },
+    {
+      "id": "A008-0",
+      "application_id": "A008",
+      "status": "submitted",
+      "occurred_at": "2026-10-10T10:00:00Z"
+    },
+    {
+      "id": "A008-1",
+      "application_id": "A008",
+      "status": "screened",
+      "occurred_at": "2026-10-11T10:00:00Z"
+    },
+    {
+      "id": "A009-0",
+      "application_id": "A009",
+      "status": "submitted",
+      "occurred_at": "2026-10-11T10:00:00Z"
+    },
+    {
+      "id": "A009-1",
+      "application_id": "A009",
+      "status": "screened",
+      "occurred_at": "2026-10-12T10:00:00Z"
+    },
+    {
+      "id": "A009-2",
+      "application_id": "A009",
+      "status": "interview",
+      "occurred_at": "2026-10-13T10:00:00Z"
+    },
+    {
+      "id": "A010-0",
+      "application_id": "A010",
+      "status": "submitted",
+      "occurred_at": "2026-10-12T10:00:00Z"
+    },
+    {
+      "id": "A010-1",
+      "application_id": "A010",
+      "status": "screened",
+      "occurred_at": "2026-10-13T10:00:00Z"
+    },
+    {
+      "id": "A010-2",
+      "application_id": "A010",
+      "status": "interview",
+      "occurred_at": "2026-10-14T10:00:00Z"
+    },
+    {
+      "id": "A010-3",
+      "application_id": "A010",
+      "status": "offered",
+      "occurred_at": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "A011-0",
+      "application_id": "A011",
+      "status": "submitted",
+      "occurred_at": "2026-10-13T10:00:00Z"
+    },
+    {
+      "id": "A011-1",
+      "application_id": "A011",
+      "status": "screened",
+      "occurred_at": "2026-10-14T10:00:00Z"
+    },
+    {
+      "id": "A011-2",
+      "application_id": "A011",
+      "status": "interview",
+      "occurred_at": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "A011-3",
+      "application_id": "A011",
+      "status": "offered",
+      "occurred_at": "2026-10-16T10:00:00Z"
+    },
+    {
+      "id": "A011-4",
+      "application_id": "A011",
+      "status": "hired",
+      "occurred_at": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "A012-0",
+      "application_id": "A012",
+      "status": "submitted",
+      "occurred_at": "2026-10-14T10:00:00Z"
+    },
+    {
+      "id": "A012-1",
+      "application_id": "A012",
+      "status": "screened",
+      "occurred_at": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "A012-2",
+      "application_id": "A012",
+      "status": "rejected",
+      "occurred_at": "2026-10-16T10:00:00Z"
+    },
+    {
+      "id": "A013-0",
+      "application_id": "A013",
+      "status": "submitted",
+      "occurred_at": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "A014-0",
+      "application_id": "A014",
+      "status": "submitted",
+      "occurred_at": "2026-10-16T10:00:00Z"
+    },
+    {
+      "id": "A014-1",
+      "application_id": "A014",
+      "status": "screened",
+      "occurred_at": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "A015-0",
+      "application_id": "A015",
+      "status": "submitted",
+      "occurred_at": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "A015-1",
+      "application_id": "A015",
+      "status": "screened",
+      "occurred_at": "2026-10-18T10:00:00Z"
+    },
+    {
+      "id": "A015-2",
+      "application_id": "A015",
+      "status": "interview",
+      "occurred_at": "2026-10-19T10:00:00Z"
+    },
+    {
+      "id": "A016-0",
+      "application_id": "A016",
+      "status": "submitted",
+      "occurred_at": "2026-10-18T10:00:00Z"
+    },
+    {
+      "id": "A016-1",
+      "application_id": "A016",
+      "status": "screened",
+      "occurred_at": "2026-10-19T10:00:00Z"
+    },
+    {
+      "id": "A016-2",
+      "application_id": "A016",
+      "status": "interview",
+      "occurred_at": "2026-10-20T10:00:00Z"
+    },
+    {
+      "id": "A016-3",
+      "application_id": "A016",
+      "status": "offered",
+      "occurred_at": "2026-10-21T10:00:00Z"
+    },
+    {
+      "id": "A017-0",
+      "application_id": "A017",
+      "status": "submitted",
+      "occurred_at": "2026-10-19T10:00:00Z"
+    },
+    {
+      "id": "A017-1",
+      "application_id": "A017",
+      "status": "screened",
+      "occurred_at": "2026-10-20T10:00:00Z"
+    },
+    {
+      "id": "A017-2",
+      "application_id": "A017",
+      "status": "interview",
+      "occurred_at": "2026-10-21T10:00:00Z"
+    },
+    {
+      "id": "A017-3",
+      "application_id": "A017",
+      "status": "offered",
+      "occurred_at": "2026-10-22T10:00:00Z"
+    },
+    {
+      "id": "A017-4",
+      "application_id": "A017",
+      "status": "hired",
+      "occurred_at": "2026-10-23T10:00:00Z"
+    },
+    {
+      "id": "A018-0",
+      "application_id": "A018",
+      "status": "submitted",
+      "occurred_at": "2026-10-20T10:00:00Z"
+    },
+    {
+      "id": "A018-1",
+      "application_id": "A018",
+      "status": "screened",
+      "occurred_at": "2026-10-21T10:00:00Z"
+    },
+    {
+      "id": "A018-2",
+      "application_id": "A018",
+      "status": "rejected",
+      "occurred_at": "2026-10-22T10:00:00Z"
+    },
+    {
+      "id": "A019-0",
+      "application_id": "A019",
+      "status": "submitted",
+      "occurred_at": "2026-10-21T10:00:00Z"
+    },
+    {
+      "id": "A020-0",
+      "application_id": "A020",
+      "status": "submitted",
+      "occurred_at": "2026-10-22T10:00:00Z"
+    },
+    {
+      "id": "A020-1",
+      "application_id": "A020",
+      "status": "screened",
+      "occurred_at": "2026-10-23T10:00:00Z"
+    },
+    {
+      "id": "A021-0",
+      "application_id": "A021",
+      "status": "submitted",
+      "occurred_at": "2026-10-03T10:00:00Z"
+    },
+    {
+      "id": "A021-1",
+      "application_id": "A021",
+      "status": "screened",
+      "occurred_at": "2026-10-04T10:00:00Z"
+    },
+    {
+      "id": "A021-2",
+      "application_id": "A021",
+      "status": "interview",
+      "occurred_at": "2026-10-05T10:00:00Z"
+    },
+    {
+      "id": "A022-0",
+      "application_id": "A022",
+      "status": "submitted",
+      "occurred_at": "2026-10-04T10:00:00Z"
+    },
+    {
+      "id": "A022-1",
+      "application_id": "A022",
+      "status": "screened",
+      "occurred_at": "2026-10-05T10:00:00Z"
+    },
+    {
+      "id": "A022-2",
+      "application_id": "A022",
+      "status": "interview",
+      "occurred_at": "2026-10-06T10:00:00Z"
+    },
+    {
+      "id": "A022-3",
+      "application_id": "A022",
+      "status": "offered",
+      "occurred_at": "2026-10-07T10:00:00Z"
+    },
+    {
+      "id": "A023-0",
+      "application_id": "A023",
+      "status": "submitted",
+      "occurred_at": "2026-10-05T10:00:00Z"
+    },
+    {
+      "id": "A023-1",
+      "application_id": "A023",
+      "status": "screened",
+      "occurred_at": "2026-10-06T10:00:00Z"
+    },
+    {
+      "id": "A023-2",
+      "application_id": "A023",
+      "status": "interview",
+      "occurred_at": "2026-10-07T10:00:00Z"
+    },
+    {
+      "id": "A023-3",
+      "application_id": "A023",
+      "status": "offered",
+      "occurred_at": "2026-10-08T10:00:00Z"
+    },
+    {
+      "id": "A023-4",
+      "application_id": "A023",
+      "status": "hired",
+      "occurred_at": "2026-10-09T10:00:00Z"
+    },
+    {
+      "id": "A024-0",
+      "application_id": "A024",
+      "status": "submitted",
+      "occurred_at": "2026-10-06T10:00:00Z"
+    },
+    {
+      "id": "A024-1",
+      "application_id": "A024",
+      "status": "screened",
+      "occurred_at": "2026-10-07T10:00:00Z"
+    },
+    {
+      "id": "A024-2",
+      "application_id": "A024",
+      "status": "rejected",
+      "occurred_at": "2026-10-08T10:00:00Z"
+    },
+    {
+      "id": "A025-0",
+      "application_id": "A025",
+      "status": "submitted",
+      "occurred_at": "2026-10-07T10:00:00Z"
+    },
+    {
+      "id": "A026-0",
+      "application_id": "A026",
+      "status": "submitted",
+      "occurred_at": "2026-10-08T10:00:00Z"
+    },
+    {
+      "id": "A026-1",
+      "application_id": "A026",
+      "status": "screened",
+      "occurred_at": "2026-10-09T10:00:00Z"
+    },
+    {
+      "id": "A027-0",
+      "application_id": "A027",
+      "status": "submitted",
+      "occurred_at": "2026-10-09T10:00:00Z"
+    },
+    {
+      "id": "A027-1",
+      "application_id": "A027",
+      "status": "screened",
+      "occurred_at": "2026-10-10T10:00:00Z"
+    },
+    {
+      "id": "A027-2",
+      "application_id": "A027",
+      "status": "interview",
+      "occurred_at": "2026-10-11T10:00:00Z"
+    },
+    {
+      "id": "A028-0",
+      "application_id": "A028",
+      "status": "submitted",
+      "occurred_at": "2026-10-10T10:00:00Z"
+    },
+    {
+      "id": "A028-1",
+      "application_id": "A028",
+      "status": "screened",
+      "occurred_at": "2026-10-11T10:00:00Z"
+    },
+    {
+      "id": "A028-2",
+      "application_id": "A028",
+      "status": "interview",
+      "occurred_at": "2026-10-12T10:00:00Z"
+    },
+    {
+      "id": "A028-3",
+      "application_id": "A028",
+      "status": "offered",
+      "occurred_at": "2026-10-13T10:00:00Z"
+    },
+    {
+      "id": "A029-0",
+      "application_id": "A029",
+      "status": "submitted",
+      "occurred_at": "2026-10-11T10:00:00Z"
+    },
+    {
+      "id": "A029-1",
+      "application_id": "A029",
+      "status": "screened",
+      "occurred_at": "2026-10-12T10:00:00Z"
+    },
+    {
+      "id": "A029-2",
+      "application_id": "A029",
+      "status": "interview",
+      "occurred_at": "2026-10-13T10:00:00Z"
+    },
+    {
+      "id": "A029-3",
+      "application_id": "A029",
+      "status": "offered",
+      "occurred_at": "2026-10-14T10:00:00Z"
+    },
+    {
+      "id": "A029-4",
+      "application_id": "A029",
+      "status": "hired",
+      "occurred_at": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "A030-0",
+      "application_id": "A030",
+      "status": "submitted",
+      "occurred_at": "2026-10-12T10:00:00Z"
+    },
+    {
+      "id": "A030-1",
+      "application_id": "A030",
+      "status": "screened",
+      "occurred_at": "2026-10-13T10:00:00Z"
+    },
+    {
+      "id": "A030-2",
+      "application_id": "A030",
+      "status": "rejected",
+      "occurred_at": "2026-10-14T10:00:00Z"
+    },
+    {
+      "id": "A031-0",
+      "application_id": "A031",
+      "status": "submitted",
+      "occurred_at": "2026-10-13T10:00:00Z"
+    },
+    {
+      "id": "A032-0",
+      "application_id": "A032",
+      "status": "submitted",
+      "occurred_at": "2026-10-14T10:00:00Z"
+    },
+    {
+      "id": "A032-1",
+      "application_id": "A032",
+      "status": "screened",
+      "occurred_at": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "A033-0",
+      "application_id": "A033",
+      "status": "submitted",
+      "occurred_at": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "A033-1",
+      "application_id": "A033",
+      "status": "screened",
+      "occurred_at": "2026-10-16T10:00:00Z"
+    },
+    {
+      "id": "A033-2",
+      "application_id": "A033",
+      "status": "interview",
+      "occurred_at": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "A034-0",
+      "application_id": "A034",
+      "status": "submitted",
+      "occurred_at": "2026-10-16T10:00:00Z"
+    },
+    {
+      "id": "A034-1",
+      "application_id": "A034",
+      "status": "screened",
+      "occurred_at": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "A034-2",
+      "application_id": "A034",
+      "status": "interview",
+      "occurred_at": "2026-10-18T10:00:00Z"
+    },
+    {
+      "id": "A034-3",
+      "application_id": "A034",
+      "status": "offered",
+      "occurred_at": "2026-10-19T10:00:00Z"
+    },
+    {
+      "id": "A035-0",
+      "application_id": "A035",
+      "status": "submitted",
+      "occurred_at": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "A035-1",
+      "application_id": "A035",
+      "status": "screened",
+      "occurred_at": "2026-10-18T10:00:00Z"
+    },
+    {
+      "id": "A035-2",
+      "application_id": "A035",
+      "status": "interview",
+      "occurred_at": "2026-10-19T10:00:00Z"
+    },
+    {
+      "id": "A035-3",
+      "application_id": "A035",
+      "status": "offered",
+      "occurred_at": "2026-10-20T10:00:00Z"
+    },
+    {
+      "id": "A035-4",
+      "application_id": "A035",
+      "status": "hired",
+      "occurred_at": "2026-10-21T10:00:00Z"
+    },
+    {
+      "id": "A036-0",
+      "application_id": "A036",
+      "status": "submitted",
+      "occurred_at": "2026-10-18T10:00:00Z"
+    },
+    {
+      "id": "A036-1",
+      "application_id": "A036",
+      "status": "screened",
+      "occurred_at": "2026-10-19T10:00:00Z"
+    },
+    {
+      "id": "A036-2",
+      "application_id": "A036",
+      "status": "rejected",
+      "occurred_at": "2026-10-20T10:00:00Z"
+    },
+    {
+      "id": "A037-0",
+      "application_id": "A037",
+      "status": "submitted",
+      "occurred_at": "2026-10-19T10:00:00Z"
+    },
+    {
+      "id": "A038-0",
+      "application_id": "A038",
+      "status": "submitted",
+      "occurred_at": "2026-10-20T10:00:00Z"
+    },
+    {
+      "id": "A038-1",
+      "application_id": "A038",
+      "status": "screened",
+      "occurred_at": "2026-10-21T10:00:00Z"
+    },
+    {
+      "id": "A039-0",
+      "application_id": "A039",
+      "status": "submitted",
+      "occurred_at": "2026-10-21T10:00:00Z"
+    },
+    {
+      "id": "A039-1",
+      "application_id": "A039",
+      "status": "screened",
+      "occurred_at": "2026-10-22T10:00:00Z"
+    },
+    {
+      "id": "A039-2",
+      "application_id": "A039",
+      "status": "interview",
+      "occurred_at": "2026-10-23T10:00:00Z"
+    },
+    {
+      "id": "A040-0",
+      "application_id": "A040",
+      "status": "submitted",
+      "occurred_at": "2026-10-22T10:00:00Z"
+    },
+    {
+      "id": "A040-1",
+      "application_id": "A040",
+      "status": "screened",
+      "occurred_at": "2026-10-23T10:00:00Z"
+    },
+    {
+      "id": "A040-2",
+      "application_id": "A040",
+      "status": "interview",
+      "occurred_at": "2026-10-24T10:00:00Z"
+    },
+    {
+      "id": "A040-3",
+      "application_id": "A040",
+      "status": "offered",
+      "occurred_at": "2026-10-25T10:00:00Z"
+    }
+  ],
+  "salary_snapshots": [
+    {
+      "id": "J01-2026-08",
+      "job_id": "J01",
+      "month": "2026-08",
+      "city": "Hà Nội",
+      "role": "frontend",
+      "salary_min": 2700000,
+      "salary_max": 4500000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J01-2026-09",
+      "job_id": "J01",
+      "month": "2026-09",
+      "city": "Hà Nội",
+      "role": "frontend",
+      "salary_min": 2850000,
+      "salary_max": 4750000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J01-2026-10",
+      "job_id": "J01",
+      "month": "2026-10",
+      "city": "Hà Nội",
+      "role": "frontend",
+      "salary_min": 3000000,
+      "salary_max": 5000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J02-2026-08",
+      "job_id": "J02",
+      "month": "2026-08",
+      "city": "Hà Nội",
+      "role": "frontend",
+      "salary_min": 3600000,
+      "salary_max": 5400000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J02-2026-09",
+      "job_id": "J02",
+      "month": "2026-09",
+      "city": "Hà Nội",
+      "role": "frontend",
+      "salary_min": 3800000,
+      "salary_max": 5700000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J02-2026-10",
+      "job_id": "J02",
+      "month": "2026-10",
+      "city": "Hà Nội",
+      "role": "frontend",
+      "salary_min": 4000000,
+      "salary_max": 6000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J03-2026-08",
+      "job_id": "J03",
+      "month": "2026-08",
+      "city": "TP Hồ Chí Minh",
+      "role": "frontend",
+      "salary_min": 4500000,
+      "salary_max": 6300000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J03-2026-09",
+      "job_id": "J03",
+      "month": "2026-09",
+      "city": "TP Hồ Chí Minh",
+      "role": "frontend",
+      "salary_min": 4750000,
+      "salary_max": 6650000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J03-2026-10",
+      "job_id": "J03",
+      "month": "2026-10",
+      "city": "TP Hồ Chí Minh",
+      "role": "frontend",
+      "salary_min": 5000000,
+      "salary_max": 7000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J04-2026-08",
+      "job_id": "J04",
+      "month": "2026-08",
+      "city": "Đà Nẵng",
+      "role": "frontend",
+      "salary_min": 5400000,
+      "salary_max": 7200000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J04-2026-09",
+      "job_id": "J04",
+      "month": "2026-09",
+      "city": "Đà Nẵng",
+      "role": "frontend",
+      "salary_min": 5700000,
+      "salary_max": 7600000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J04-2026-10",
+      "job_id": "J04",
+      "month": "2026-10",
+      "city": "Đà Nẵng",
+      "role": "frontend",
+      "salary_min": 6000000,
+      "salary_max": 8000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J05-2026-08",
+      "job_id": "J05",
+      "month": "2026-08",
+      "city": "Hà Nội",
+      "role": "data",
+      "salary_min": 3600000,
+      "salary_max": 5400000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J05-2026-09",
+      "job_id": "J05",
+      "month": "2026-09",
+      "city": "Hà Nội",
+      "role": "data",
+      "salary_min": 3800000,
+      "salary_max": 5700000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J05-2026-10",
+      "job_id": "J05",
+      "month": "2026-10",
+      "city": "Hà Nội",
+      "role": "data",
+      "salary_min": 4000000,
+      "salary_max": 6000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J06-2026-08",
+      "job_id": "J06",
+      "month": "2026-08",
+      "city": "Hà Nội",
+      "role": "data",
+      "salary_min": 4500000,
+      "salary_max": 6300000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J06-2026-09",
+      "job_id": "J06",
+      "month": "2026-09",
+      "city": "Hà Nội",
+      "role": "data",
+      "salary_min": 4750000,
+      "salary_max": 6650000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J06-2026-10",
+      "job_id": "J06",
+      "month": "2026-10",
+      "city": "Hà Nội",
+      "role": "data",
+      "salary_min": 5000000,
+      "salary_max": 7000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J07-2026-08",
+      "job_id": "J07",
+      "month": "2026-08",
+      "city": "TP Hồ Chí Minh",
+      "role": "data",
+      "salary_min": 5400000,
+      "salary_max": 7200000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J07-2026-09",
+      "job_id": "J07",
+      "month": "2026-09",
+      "city": "TP Hồ Chí Minh",
+      "role": "data",
+      "salary_min": 5700000,
+      "salary_max": 7600000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J07-2026-10",
+      "job_id": "J07",
+      "month": "2026-10",
+      "city": "TP Hồ Chí Minh",
+      "role": "data",
+      "salary_min": 6000000,
+      "salary_max": 8000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J08-2026-08",
+      "job_id": "J08",
+      "month": "2026-08",
+      "city": "Đà Nẵng",
+      "role": "data",
+      "salary_min": 6300000,
+      "salary_max": 8100000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J08-2026-09",
+      "job_id": "J08",
+      "month": "2026-09",
+      "city": "Đà Nẵng",
+      "role": "data",
+      "salary_min": 6650000,
+      "salary_max": 8550000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J08-2026-10",
+      "job_id": "J08",
+      "month": "2026-10",
+      "city": "Đà Nẵng",
+      "role": "data",
+      "salary_min": 7000000,
+      "salary_max": 9000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J09-2026-08",
+      "job_id": "J09",
+      "month": "2026-08",
+      "city": "Hà Nội",
+      "role": "backend",
+      "salary_min": 4500000,
+      "salary_max": 6300000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J09-2026-09",
+      "job_id": "J09",
+      "month": "2026-09",
+      "city": "Hà Nội",
+      "role": "backend",
+      "salary_min": 4750000,
+      "salary_max": 6650000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J09-2026-10",
+      "job_id": "J09",
+      "month": "2026-10",
+      "city": "Hà Nội",
+      "role": "backend",
+      "salary_min": 5000000,
+      "salary_max": 7000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J10-2026-08",
+      "job_id": "J10",
+      "month": "2026-08",
+      "city": "Hà Nội",
+      "role": "backend",
+      "salary_min": 5400000,
+      "salary_max": 7200000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J10-2026-09",
+      "job_id": "J10",
+      "month": "2026-09",
+      "city": "Hà Nội",
+      "role": "backend",
+      "salary_min": 5700000,
+      "salary_max": 7600000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J10-2026-10",
+      "job_id": "J10",
+      "month": "2026-10",
+      "city": "Hà Nội",
+      "role": "backend",
+      "salary_min": 6000000,
+      "salary_max": 8000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J11-2026-08",
+      "job_id": "J11",
+      "month": "2026-08",
+      "city": "TP Hồ Chí Minh",
+      "role": "backend",
+      "salary_min": 6300000,
+      "salary_max": 8100000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J11-2026-09",
+      "job_id": "J11",
+      "month": "2026-09",
+      "city": "TP Hồ Chí Minh",
+      "role": "backend",
+      "salary_min": 6650000,
+      "salary_max": 8550000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J11-2026-10",
+      "job_id": "J11",
+      "month": "2026-10",
+      "city": "TP Hồ Chí Minh",
+      "role": "backend",
+      "salary_min": 7000000,
+      "salary_max": 9000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J12-2026-08",
+      "job_id": "J12",
+      "month": "2026-08",
+      "city": "Đà Nẵng",
+      "role": "backend",
+      "salary_min": 7200000,
+      "salary_max": 9000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J12-2026-09",
+      "job_id": "J12",
+      "month": "2026-09",
+      "city": "Đà Nẵng",
+      "role": "backend",
+      "salary_min": 7600000,
+      "salary_max": 9500000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J12-2026-10",
+      "job_id": "J12",
+      "month": "2026-10",
+      "city": "Đà Nẵng",
+      "role": "backend",
+      "salary_min": 8000000,
+      "salary_max": 10000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J13-2026-08",
+      "job_id": "J13",
+      "month": "2026-08",
+      "city": "Hà Nội",
+      "role": "content",
+      "salary_min": 5400000,
+      "salary_max": 7200000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J13-2026-09",
+      "job_id": "J13",
+      "month": "2026-09",
+      "city": "Hà Nội",
+      "role": "content",
+      "salary_min": 5700000,
+      "salary_max": 7600000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J13-2026-10",
+      "job_id": "J13",
+      "month": "2026-10",
+      "city": "Hà Nội",
+      "role": "content",
+      "salary_min": 6000000,
+      "salary_max": 8000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J14-2026-08",
+      "job_id": "J14",
+      "month": "2026-08",
+      "city": "Hà Nội",
+      "role": "content",
+      "salary_min": 6300000,
+      "salary_max": 8100000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J14-2026-09",
+      "job_id": "J14",
+      "month": "2026-09",
+      "city": "Hà Nội",
+      "role": "content",
+      "salary_min": 6650000,
+      "salary_max": 8550000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J14-2026-10",
+      "job_id": "J14",
+      "month": "2026-10",
+      "city": "Hà Nội",
+      "role": "content",
+      "salary_min": 7000000,
+      "salary_max": 9000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J15-2026-08",
+      "job_id": "J15",
+      "month": "2026-08",
+      "city": "TP Hồ Chí Minh",
+      "role": "content",
+      "salary_min": 7200000,
+      "salary_max": 9000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J15-2026-09",
+      "job_id": "J15",
+      "month": "2026-09",
+      "city": "TP Hồ Chí Minh",
+      "role": "content",
+      "salary_min": 7600000,
+      "salary_max": 9500000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J15-2026-10",
+      "job_id": "J15",
+      "month": "2026-10",
+      "city": "TP Hồ Chí Minh",
+      "role": "content",
+      "salary_min": 8000000,
+      "salary_max": 10000000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J16-2026-08",
+      "job_id": "J16",
+      "month": "2026-08",
+      "city": "Đà Nẵng",
+      "role": "content",
+      "salary_min": 8100000,
+      "salary_max": 9900000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J16-2026-09",
+      "job_id": "J16",
+      "month": "2026-09",
+      "city": "Đà Nẵng",
+      "role": "content",
+      "salary_min": 8550000,
+      "salary_max": 10450000,
+      "currency": "VND",
+      "period": "month"
+    },
+    {
+      "id": "J16-2026-10",
+      "job_id": "J16",
+      "month": "2026-10",
+      "city": "Đà Nẵng",
+      "role": "content",
+      "salary_min": 9000000,
+      "salary_max": 11000000,
+      "currency": "VND",
+      "period": "month"
+    }
+  ],
+  "skills": [
+    "CSS",
+    "Canva",
+    "Content Writing",
+    "Excel",
+    "Git",
+    "Google Analytics",
+    "HTML",
+    "Java",
+    "JavaScript",
+    "Power BI",
+    "Python",
+    "React",
+    "SEO",
+    "SQL",
+    "Spring Boot"
+  ],
+  "employers": [
+    {
+      "id": "E01",
+      "name": "Mây Digital"
+    },
+    {
+      "id": "E02",
+      "name": "Hạt Giống Tech"
+    },
+    {
+      "id": "E03",
+      "name": "Bến Thành Labs"
+    },
+    {
+      "id": "E04",
+      "name": "Sông Hàn Studio"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+import {GET,POST} from '../app/api/[...path]/route.ts';
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+const base=process.env.CAMPUSMATCH_TEST_URL||'http://terminal.local:4173';
+const f=JSON.parse(fs.readFileSync(new URL('../data/fixtures.json',import.meta.url)));let candidate='MY_PROFILE',createdJob,createdApp;const evidence=[];
+async function call(path,body,extra={}){const r=await (body?POST:GET)(new Request(base+'/api/'+path,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json',Origin:base,...extra}:extra,body:body?JSON.stringify(body):undefined}));const d=await r.json();return {status:r.status,body:d};}
+async function run(name,fn){await test(name,async()=>{await fn();evidence.push({name,status:'pass'});});}
+await run('Khởi tạo dữ liệu có tính lặp lại an toàn',async()=>{assert.equal((await call('init',{})).status,200);assert.equal((await call('init',{})).status,200);const {body}=await call('data');assert.equal(body.jobs.filter(j=>j.id.startsWith('J')).length,16);});
+await run('API đọc CV trả kỹ năng và bằng chứng',async()=>{const r=await call('cv/parse',{text:f.candidates[0].text});assert.equal(r.status,200);assert(r.body.skills.length>=4);});
+await run('API từ chối JSON null',async()=>{const r=await POST(new Request(base+'/api/cv/parse',{method:'POST',headers:{'Content-Type':'application/json'},body:'null'}));assert.equal(r.status,400);});
+await run('API từ chối JSON sai cú pháp',async()=>{const r=await POST(new Request(base+'/api/cv/parse',{method:'POST',headers:{'Content-Type':'application/json'},body:'{broken'}));assert.equal(r.status,400);});
+await run('API từ chối CV rỗng',async()=>assert.equal((await call('cv/parse',{text:''})).status,400));
+await run('API từ chối Origin khác',async()=>assert.equal((await call('cv/parse',{text:f.candidates[0].text},{Origin:'https://example.invalid'})).status,403));
+await run('API từ chối hồ sơ chưa xác nhận',async()=>assert.equal((await call('profiles',{...f.candidates[0],confirmed:false})).status,400));
+await run('Lưu hồ sơ xác nhận vào CSDL',async()=>{const r=await call('profiles',{...f.candidates[0],name:'Ứng viên kiểm thử API',confirmed:true});assert.equal(r.status,201);assert.equal(r.body.id,candidate);});
+await run('API match có phiên bản và thành phần điểm',async()=>{const r=await call('match',{candidate_id:candidate});assert.equal(r.status,200);assert(r.body.results.length>=16);assert(r.body.results[0].components);assert.equal(r.body.model_version,'tfidf-hybrid-2.0');});
+await run('Không tìm thấy hồ sơ trả 404',async()=>assert.equal((await call('match',{candidate_id:'missing'})).status,404));
+await run('Đăng tin với lương sai bị từ chối',async()=>assert.equal((await call('jobs',{title:'Vị trí kiểm thử',description:'Mô tả kiểm thử đủ dài cho hệ thống tuyển dụng.',employer_id:'E01',role:'frontend',city:'Hà Nội',mode:'Hybrid',days:[2,4],skills:['React'],salary_min:5000000,salary_max:3000000,deadline:'2026-12-31'})).status,400));
+await run('Đăng tin hợp lệ tạo tin và snapshot lương',async()=>{const r=await call('jobs',{title:'Frontend QA '+Date.now(),description:'Xây dựng giao diện web bằng React và JavaScript, tích hợp API.',employer_id:'E01',role:'frontend',city:'Hà Nội',mode:'Hybrid',days:[2,4],skills:['React','JavaScript'],salary_min:3000000,salary_max:5000000,deadline:'2026-12-31'});assert.equal(r.status,201);createdJob=r.body.id;const d=await call('data');assert(d.body.salary_snapshots.some(s=>s.job_id===createdJob));});
+await run('Gửi đơn tạo dữ liệu bền vững',async()=>{const r=await call('applications',{candidate_id:candidate,job_id:createdJob});assert.equal(r.status,201);createdApp=r.body.id;});
+await run('Ứng tuyển trùng trả 409',async()=>assert.equal((await call('applications',{candidate_id:candidate,job_id:createdJob})).status,409));
+await run('Chuyển trạng thái sai bị từ chối',async()=>assert.equal((await call('applications/status',{id:createdApp,status:'hired'})).status,400));
+await run('Chuyển trạng thái hợp lệ lưu lịch sử',async()=>{assert.equal((await call('applications/status',{id:createdApp,status:'screened'})).status,200);const d=await call('data');assert(d.body.events.some(e=>e.application_id===createdApp&&e.status==='screened'));});
+await run('Sửa CV không đổi snapshot đơn gửi trước',async()=>{const old=(await call('data')).body.applications.find(a=>a.id===createdApp).snapshot_json;await call('profiles',{...f.candidates[0],name:'Ứng viên kiểm thử đã sửa',text:f.candidates[0].text+'\nThêm nội dung sau khi gửi đơn.',confirmed:true});assert.equal((await call('data')).body.applications.find(a=>a.id===createdApp).snapshot_json,old);});
+await run('BI cohort rỗng không chia cho 0',async()=>{const r=await call('bi?from=2027-01-01&to=2027-12-31');assert.equal(r.status,200);assert.equal(r.body.hire_rate,null);assert.equal(r.body.applications,0);});
+fs.writeFileSync(new URL('../data/api-test-results.json',import.meta.url),JSON.stringify({count:evidence.length,results:evidence},null,2));

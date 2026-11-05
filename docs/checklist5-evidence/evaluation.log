@@ -1,0 +1,34 @@
+{
+  "metrics": {
+    "test": {
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9412
+      },
+      "tfidf": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "ndcg": 0.8037
+      },
+      "alphabetical": {
+        "precision": 0.1667,
+        "recall": 0.1667,
+        "ndcg": 0.1937
+      }
+    },
+    "validation": {
+      "hybrid": {
+        "precision": 1,
+        "recall": 1,
+        "ndcg": 0.9299
+      }
+    }
+  },
+  "latency_ms": {
+    "median": 2.0148999999999972,
+    "max": 18.2791
+  },
+  "vocabulary": 175
+}
+

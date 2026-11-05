@@ -1,0 +1,203 @@
+TAP version 13
+# Subtest: CV rỗng bị từ chối
+ok 1 - CV rỗng bị từ chối
+  ---
+  duration_ms: 2.1075
+  type: 'test'
+  ...
+# Subtest: CV quá dài bị từ chối
+ok 2 - CV quá dài bị từ chối
+  ---
+  duration_ms: 0.2024
+  type: 'test'
+  ...
+# Subtest: Không gộp JavaScript vào Java
+ok 3 - Không gộp JavaScript vào Java
+  ---
+  duration_ms: 2.0362
+  type: 'test'
+  ...
+# Subtest: Java vẫn được nhận diện độc lập
+ok 4 - Java vẫn được nhận diện độc lập
+  ---
+  duration_ms: 0.5885
+  type: 'test'
+  ...
+# Subtest: Alias JS và ReactJS được chuẩn hóa
+ok 5 - Alias JS và ReactJS được chuẩn hóa
+  ---
+  duration_ms: 0.4807
+  type: 'test'
+  ...
+# Subtest: Không nhận Python trong câu chưa biết Python
+ok 6 - Không nhận Python trong câu chưa biết Python
+  ---
+  duration_ms: 0.2186
+  type: 'test'
+  ...
+# Subtest: Vẫn nhận kỹ năng khi có bằng chứng dương khác
+ok 7 - Vẫn nhận kỹ năng khi có bằng chứng dương khác
+  ---
+  duration_ms: 0.2156
+  type: 'test'
+  ...
+# Subtest: Trả bằng chứng và yêu cầu xác nhận
+ok 8 - Trả bằng chứng và yêu cầu xác nhận
+  ---
+  duration_ms: 0.341
+  type: 'test'
+  ...
+# Subtest: TF-IDF chỉ fit 12 JD train
+ok 9 - TF-IDF chỉ fit 12 JD train
+  ---
+  duration_ms: 0.1022
+  type: 'test'
+  ...
+# Subtest: Từ ngoài từ vựng không thêm vào mô hình
+ok 10 - Từ ngoài từ vựng không thêm vào mô hình
+  ---
+  duration_ms: 0.696
+  type: 'test'
+  ...
+# Subtest: Cosine vector rỗng bằng 0
+ok 11 - Cosine vector rỗng bằng 0
+  ---
+  duration_ms: 0.1606
+  type: 'test'
+  ...
+# Subtest: Cosine tự so sánh bằng 1
+ok 12 - Cosine tự so sánh bằng 1
+  ---
+  duration_ms: 0.4877
+  type: 'test'
+  ...
+# Subtest: Điểm luôn nằm trong 0 đến 100
+ok 13 - Điểm luôn nằm trong 0 đến 100
+  ---
+  duration_ms: 45.929
+  type: 'test'
+  ...
+# Subtest: Chưa xác nhận không có tổng điểm
+ok 14 - Chưa xác nhận không có tổng điểm
+  ---
+  duration_ms: 0.2889
+  type: 'test'
+  ...
+# Subtest: Thiếu lịch không tự giả định là khớp
+ok 15 - Thiếu lịch không tự giả định là khớp
+  ---
+  duration_ms: 0.2565
+  type: 'test'
+  ...
+# Subtest: Trùng lịch bị loại dù kỹ năng khớp
+ok 16 - Trùng lịch bị loại dù kỹ năng khớp
+  ---
+  duration_ms: 0.2354
+  type: 'test'
+  ...
+# Subtest: Tin đóng bị loại
+ok 17 - Tin đóng bị loại
+  ---
+  duration_ms: 0.1937
+  type: 'test'
+  ...
+# Subtest: Tin hết hạn bị loại
+ok 18 - Tin hết hạn bị loại
+  ---
+  duration_ms: 0.1892
+  type: 'test'
+  ...
+# Subtest: Remote không trừ điểm vì khác thành phố
+ok 19 - Remote không trừ điểm vì khác thành phố
+  ---
+  duration_ms: 0.4579
+  type: 'test'
+  ...
+# Subtest: Tổng điểm khớp tổng các thành phần
+ok 20 - Tổng điểm khớp tổng các thành phần
+  ---
+  duration_ms: 0.2864
+  type: 'test'
+  ...
+# Subtest: Giới tính và tuổi không ảnh hưởng điểm
+ok 21 - Giới tính và tuổi không ảnh hưởng điểm
+  ---
+  duration_ms: 0.5391
+  type: 'test'
+  ...
+# Subtest: Hạng cao nhất cùng nhóm nghề của hồ sơ
+ok 22 - Hạng cao nhất cùng nhóm nghề của hồ sơ
+  ---
+  duration_ms: 26.0582
+  type: 'test'
+  ...
+# Subtest: Funnel đơn từng đi qua và giảm dần
+ok 23 - Funnel đơn từng đi qua và giảm dần
+  ---
+  duration_ms: 5.1431
+  type: 'test'
+  ...
+# Subtest: BI không cộng trùng ứng viên
+ok 24 - BI không cộng trùng ứng viên
+  ---
+  duration_ms: 0.2005
+  type: 'test'
+  ...
+# Subtest: Cohort rỗng trả tỷ lệ null
+ok 25 - Cohort rỗng trả tỷ lệ null
+  ---
+  duration_ms: 0.1106
+  type: 'test'
+  ...
+# Subtest: Không trộn lương USD hoặc theo giờ
+ok 26 - Không trộn lương USD hoặc theo giờ
+  ---
+  duration_ms: 0.7629
+  type: 'test'
+  ...
+# Subtest: Lọc BI theo thành phố và cohort ngày gửi
+ok 27 - Lọc BI theo thành phố và cohort ngày gửi
+  ---
+  duration_ms: 0.2275
+  type: 'test'
+  ...
+# Subtest: Không cho chuyển trực tiếp từ gửi đơn sang tuyển
+ok 28 - Không cho chuyển trực tiếp từ gửi đơn sang tuyển
+  ---
+  duration_ms: 0.2392
+  type: 'test'
+  ...
+# Subtest: Khóa ngoại từ chối đơn không có ứng viên
+ok 29 - Khóa ngoại từ chối đơn không có ứng viên
+  ---
+  duration_ms: 10.1314
+  type: 'test'
+  ...
+# Subtest: UNIQUE ngăn ứng tuyển trùng
+ok 30 - UNIQUE ngăn ứng tuyển trùng
+  ---
+  duration_ms: 0.8526
+  type: 'test'
+  ...
+# Subtest: Sửa CV không làm đổi snapshot đơn cũ
+ok 31 - Sửa CV không làm đổi snapshot đơn cũ
+  ---
+  duration_ms: 0.5467
+  type: 'test'
+  ...
+# Subtest: Giao dịch lỗi hoàn tác cả đơn và sự kiện
+ok 32 - Giao dịch lỗi hoàn tác cả đơn và sự kiện
+  ---
+  duration_ms: 0.5101
+  type: 'test'
+  ...
+1..32
+# tests 32
+# suites 0
+# pass 32
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 207.8783
+
